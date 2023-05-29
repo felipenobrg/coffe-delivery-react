@@ -44,6 +44,7 @@ export const HeaderContainer = styled.header`
     display: none;
   }
 }
+
 `
 
 export const SectionContainer = styled.section`
@@ -124,4 +125,9 @@ export const IconsContainer = styled.div`
       margin-bottom: 0.5rem;
     }
   }
+`
+
+export const OurCoffes = styled.h1`
+   margin-left: 4.3rem;
+   font-family: 'Baloo 2', sans-serif;
 `
