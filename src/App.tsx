@@ -80,6 +80,37 @@ function App() {
           />
         </CoffeStyle>
 
+        <CoffeStyle>
+          <CoffesAvailable
+            typeCoffe="TRADICIONAL"
+            typeCoffeComplete="Expresso Tradicional"
+            descriptionCoffe="O tradicional café feito com água quente e grãos moídos"
+            price={9.99}
+          />
+
+          <CoffesAvailable
+            typeCoffe="TRADICIONAL"
+            typeCoffeComplete="Expresso Tradicional"
+            descriptionCoffe="O tradicional café feito com água quente e grãos moídos"
+            price={9.99}
+          />
+
+          <CoffesAvailable
+            typeCoffe="TRADICIONAL"
+            typeCoffeComplete="Expresso Tradicional"
+            descriptionCoffe="O tradicional café feito com água quente e grãos moídos"
+            price={9.99}
+          />
+
+          <CoffesAvailable
+            typeCoffe="TRADICIONAL"
+            typeCoffeComplete="Expresso Tradicional"
+            descriptionCoffe="O tradicional café feito com água quente e grãos moídos"
+            price={9.99}
+          />
+        </CoffeStyle>
+
+
       </ThemeProvider>
     
   );
