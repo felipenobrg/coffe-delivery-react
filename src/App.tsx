@@ -1,7 +1,6 @@
-import { Coffee, MapPin, Package, ShoppingCart, Timer } from "phosphor-react";
+import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import {
   CoffeStyle,
-  HeaderContainer,
   IconsContainer,
   OurCoffes,
   SectionContainer,
@@ -9,22 +8,12 @@ import {
 import "./styles/global";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/theme/default";
-import { CoffesAvailable } from "./components/coffes/index.tsx";
+import { CoffesAvailable } from "./components/Coffes/index.tsx";
+import { Header } from "./components/Header/index.tsx";
 function App() {
   return (
       <ThemeProvider theme={defaultTheme}>
-        <HeaderContainer>
-          <img src="./src/assets/coffe-logo.svg" alt="" />
-          <p>
-            <MapPin size={22} color="#4B2995" weight="fill" /> João Pessoa, PB
-          </p>
-          <span>
-            <button>
-              <ShoppingCart size={22} color="#C47F17" weight="fill" />
-            </button>
-          </span>
-        </HeaderContainer>
-
+        <Header />
         <SectionContainer>
           <div className="about-coffee-section">
             <h1>
