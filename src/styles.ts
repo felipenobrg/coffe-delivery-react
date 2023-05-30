@@ -131,3 +131,7 @@ export const OurCoffes = styled.h1`
    margin-left: 4.3rem;
    font-family: 'Baloo 2', sans-serif;
 `
+
+export const CoffeStyle = styled.div`
+ display: flex;
+`

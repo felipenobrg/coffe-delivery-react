@@ -54,7 +54,7 @@ export const CoffesAvailableContainer = styled.div`
     margin-left: 0.3rem;
     padding: 0.3rem;
     border-radius: 3px;
-    background: ${(props) => props.theme['purple']};
+    background: ${(props) => props.theme['purple-dark']};
   }
 
 `

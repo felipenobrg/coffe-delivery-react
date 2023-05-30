@@ -19,7 +19,7 @@ export const CoffesAvailable = ({ typeCoffe, typeCoffeComplete, descriptionCoffe
       <h2>{ typeCoffeComplete }</h2>
       <p>{ descriptionCoffe }</p>
       <div>
-       R$ <span className="price">{ price }</span> <button>-</button> <span className="amount">1</span> <button>+</button> <button className="shopping-cart"><ShoppingCart size={12} weight="fill" color="#fff"  /></button>
+       R$ <span className="price">{ price }</span> <button>-</button> <span className="amount">1</span> <button>+</button> <button className="shopping-cart"><ShoppingCart size={13} weight="fill" color="#fff"  /></button>
       </div>
     </CoffesAvailableContainer>
   );
