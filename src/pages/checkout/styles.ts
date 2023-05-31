@@ -93,11 +93,11 @@ export const CheckoutContainer = styled.div`
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     background: ${(props) => props.theme['base-input']};
-    width: 54.7%;
+    width: 56%;
     height: 11rem;
     margin-left: 3rem;
     border-radius: 9px;
-    margin-top: -2rem;
+    margin-top: -5rem;
   }
 
   .payment-div {
