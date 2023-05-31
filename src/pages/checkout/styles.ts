@@ -57,21 +57,34 @@ export const CheckoutContainer = styled.div`
     width: 10%;
   }
 
-  .coffe-select {
+  .coffe-select-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     background-color: red;
     width: 35%;
-    height: 30rem;
+    height: 32rem;
     border-radius: 9px;
     background: ${(props) => props.theme['base-input']};
+    font-family: 'Roboto', sans-serif;
   }
 
-  .coffe-select h2 {
-    margin-top: -23rem;
-    margin-right: 8rem;
+  .coffe-select-container button {
+    cursor: pointer;
+    width: 100%;
+    padding: 0.8rem;
+    color: ${(props) => props.theme['white']};;
+    background: ${(props) => props.theme['yellow']};
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+  }
+
+  .amount-items {
+    margin-top: 15rem;
+    margin-right: 57%;
+    background: ${(props) => props.theme['base-input']};
   }
 
   .payment-container {
@@ -84,6 +97,7 @@ export const CheckoutContainer = styled.div`
     height: 11rem;
     margin-left: 3rem;
     border-radius: 9px;
+    margin-top: -2rem;
   }
 
   .payment-div {

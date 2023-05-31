@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { defaultTheme } from "../../styles/theme/default";
 import { CheckoutContainer } from "./styles";
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
+import { NavLink } from "react-router-dom";
 
 export const Checkout = () => (
   <>
@@ -14,7 +15,6 @@ export const Checkout = () => (
         <div className="form-container">
           <p> <MapPinLine size={22} color="#C47F17" /> Endereço de Entrega</p>
           <p> Informe o endereço onde receber seu pedido</p>
-
           <form className="form">
             <input className="cep" type="number" placeholder="CEP" />
             <input type="text" placeholder="Rua" />
@@ -30,14 +30,18 @@ export const Checkout = () => (
           </form>
         </div>
        
-          <div className="coffe-select">
+          <div className="coffe-select-container">
+          <div>
           <h2>Café selecionados</h2>
-            <div>
+          </div>
+            <div className="amount-items">
               <p>Total de itens</p>
               <p>Entrega</p>
-              <p>Total</p>
-              <button>CONFIRMAR PEDIDO</button>
+              <h4>Total</h4>
             </div>
+            <NavLink to={"/confirmedorder"}>
+            <button>CONFIRMAR PEDIDO</button>
+            </NavLink>
           </div>
           </div>
 
@@ -48,7 +52,7 @@ export const Checkout = () => (
             O pagamento é feito na entrega. Escolha a forma que deseja pagar
           </p>
           <div className="button-container">
-            <button> <CreditCard size={16} color="#8047F8"/>  CARTÃO DE CRÉDITO</button>
+            <button> <CreditCard color="#8047F8"/>  CARTÃO DE CRÉDITO</button>
             <button> <Bank size={16} color="#8047F8"/> CARTÃO DE DÉBITO</button>
             <button> <Money size={16} color="#8047F8"/> DINHEIRO</button>
           </div>
