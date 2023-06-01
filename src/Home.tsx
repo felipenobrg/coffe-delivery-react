@@ -6,14 +6,12 @@ import {
   SectionContainer,
 } from "./styles.ts";
 import "./styles/global.ts";
-import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./styles/theme/default.ts";
 import { CoffesAvailable } from "./components/Coffes/index.tsx";
 import { Header } from "./components/Header/index.tsx";
 
 function App() {
   return (
-      <ThemeProvider theme={defaultTheme}>
+    <>
         <Header />
         <SectionContainer>
           <div className="about-coffee-section">
@@ -110,10 +108,7 @@ function App() {
             price={9.99}
           />
         </CoffeStyle>
-
-
-      </ThemeProvider>
-    
+    </>
   );
 }
 

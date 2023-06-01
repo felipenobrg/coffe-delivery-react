@@ -1,12 +1,10 @@
-import { ThemeProvider } from "styled-components";
 import { Header } from "../../components/Header";
-import { defaultTheme } from "../../styles/theme/default";
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
 import { AboutOrder, ConfirmedOrderContainer } from "./styles";
 
 export const ConfirmedOrder = () => {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <>
       <Header />
 
       <ConfirmedOrderContainer>
@@ -63,6 +61,6 @@ export const ConfirmedOrder = () => {
           </div>
         </AboutOrder>
       </ConfirmedOrderContainer>
-    </ThemeProvider>
+      </>
   );
 };

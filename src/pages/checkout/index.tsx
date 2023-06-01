@@ -1,13 +1,10 @@
-import { ThemeProvider } from "styled-components";
 import { Header } from "../../components/Header";
-import { defaultTheme } from "../../styles/theme/default";
 import { CheckoutContainer } from "./styles";
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
 export const Checkout = () => (
   <>
-    <ThemeProvider theme={defaultTheme}>
       <Header />
       <CheckoutContainer>
         <h2>Complete seu pedido</h2>
@@ -59,6 +56,5 @@ export const Checkout = () => (
         </div>
         </div>
       </CheckoutContainer>
-    </ThemeProvider>
   </>
 );
