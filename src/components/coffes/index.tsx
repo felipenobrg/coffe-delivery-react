@@ -1,6 +1,7 @@
 import { ShoppingCart } from "phosphor-react";
 import { CoffesAvailableContainer } from "./styles";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 interface CoffesProps {
   typeCoffe: string;
@@ -15,6 +16,20 @@ export const CoffesAvailable = ({
   descriptionCoffe,
   price,
 }: CoffesProps) => {
+
+  const [count, setCount] = useState(0)
+
+  const handleIncrease = () => {
+     setCount(count + 1)
+  }
+
+  const handleDecrease = () => {
+    setCount(count - 1)
+    if(count <= 0) {
+      setCount(0)
+    }
+  }
+
   return (
     <CoffesAvailableContainer>
       <img
@@ -26,9 +41,9 @@ export const CoffesAvailable = ({
       <p>{descriptionCoffe}</p>
       <div>
         R$ <span className="price">{price}</span>
-        <button>-</button>
-        <span className="amount">1</span>
-        <button>+</button>
+        <button onClick={handleDecrease}>-</button>
+        <span className="amount">{count}</span>
+        <button onClick={handleIncrease}>+</button>
         <NavLink to={"/checkout"}>
           <button className="shopping-cart">
             <ShoppingCart size={13} weight="fill" color="#fff" />

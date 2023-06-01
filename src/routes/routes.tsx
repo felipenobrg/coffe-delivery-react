@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import App from "../App"
+import App from "../Home"
 import { Checkout } from "../pages/Checkout/index"
 import { ConfirmedOrder } from "../pages/ConfirmedOrder/index"
 

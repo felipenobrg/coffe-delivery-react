@@ -5,11 +5,12 @@ import {
   OurCoffes,
   SectionContainer,
 } from "./styles.ts";
-import "./styles/global";
+import "./styles/global.ts";
 import { ThemeProvider } from "styled-components";
-import { defaultTheme } from "./styles/theme/default";
+import { defaultTheme } from "./styles/theme/default.ts";
 import { CoffesAvailable } from "./components/Coffes/index.tsx";
 import { Header } from "./components/Header/index.tsx";
+
 function App() {
   return (
       <ThemeProvider theme={defaultTheme}>
