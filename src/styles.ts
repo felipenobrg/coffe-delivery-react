@@ -68,7 +68,6 @@ export const IconsContainer = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 0;
 
     .shoppingCart-icon,
     .package-icon,
@@ -76,6 +75,7 @@ export const IconsContainer = styled.div`
     .coffe-icon {
       margin-bottom: 0.5rem;
     }
+    
   }
 `
 

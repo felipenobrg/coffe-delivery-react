@@ -1,7 +1,7 @@
 import { ShoppingCart } from "phosphor-react";
 import { CoffesAvailableContainer } from "./styles";
 import { useState } from "react";
-
+import { NavLink } from "react-router-dom";
 
 export interface Coffee {
   id: string;
@@ -33,6 +33,7 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
 
   return (
     <>
+  
         <CoffesAvailableContainer>
           <img src={coffee.srcImg} alt="" />
           <h4>{coffee.tags}</h4>
@@ -43,9 +44,11 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
             <button onClick={handleDecrease}>-</button>
             <span className="amount">{count}</span>
             <button onClick={handleIncrease}>+</button>
+            <NavLink to={"/checkout"}>
             <button className="shopping-cart">
               <ShoppingCart size={13} weight="fill" color="#fff" />
             </button>
+            </NavLink>
           </div>
         </CoffesAvailableContainer>
     </>

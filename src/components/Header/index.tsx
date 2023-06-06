@@ -2,8 +2,9 @@ import { MapPin, ShoppingCart } from "phosphor-react"
 import { CartAmount, HeaderContainer } from "./styles"
 import { NavLink } from "react-router-dom"
 
-export const Header = ( ) => {
+export const Header = () => {
     return (
+      <>
         <HeaderContainer>
         <img src="./src/assets/coffe-logo.svg" alt="" />
         <p>
@@ -18,5 +19,5 @@ export const Header = ( ) => {
           </button>
         </span>
       </HeaderContainer>
-    )
-}
+      </>
+      )}
