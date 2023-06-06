@@ -44,5 +44,15 @@ export const HeaderContainer = styled.header`
     display: none;
   }
 }
+`
 
+export const CartAmount = styled.span`
+  background:${(props) => props.theme['yellow-dark']};
+  color:${(props) => props.theme['white']};;
+  padding: 0.2rem;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 999px;
+  position: absolute;
+  top: 20px;
 `
