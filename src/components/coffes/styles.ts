@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 export const CoffesAvailableContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 18%;
-  height: 20rem;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20%rem;
+  width: 20%;
   border-radius: 9px;
-  margin-left: 5rem;
+  margin-left: 3.9rem;
   margin-top: 1.5rem;
   background: ${(props) => props.theme['base-card']};
 
@@ -38,9 +38,10 @@ export const CoffesAvailableContainer = styled.div`
     text-align: center;
   }
 
-  .price {
+  .coffe-price {
     font-family: 'Baloo 2';
     font-size: 1.3rem;
+    color: ${(props) => props.theme['black']};
   }
 
   button {    
@@ -57,4 +58,7 @@ export const CoffesAvailableContainer = styled.div`
     background: ${(props) => props.theme['purple-dark']};
   }
 
+  .coffe-amount {
+    margin-bottom: 1rem;
+  }
 `

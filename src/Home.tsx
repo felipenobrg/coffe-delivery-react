@@ -1,13 +1,12 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import {
-  CoffeStyle,
   IconsContainer,
   OurCoffes,
   SectionContainer,
 } from "./styles.ts";
 import "./styles/global.ts";
-import { CoffesAvailable } from "./components/Coffes/index.tsx";
 import { Header } from "./components/Header/index.tsx";
+import { CoffesCards } from "./components/CoffesCards/index.tsx";
 
 function App() {  
   return (
@@ -46,14 +45,10 @@ function App() {
           alt=""
         />
       </SectionContainer>
-
       <OurCoffes>Nossos cafés</OurCoffes>
-
-      <CoffeStyle>
-        <CoffesAvailable 
-        
-        />
-      </CoffeStyle>
+  
+        <CoffesCards />
+    
     </>
   );
 }

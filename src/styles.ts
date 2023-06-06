@@ -85,5 +85,5 @@ export const OurCoffes = styled.h1`
 `
 
 export const CoffeStyle = styled.div`
- display: flex;
+  display: flex;
 `
