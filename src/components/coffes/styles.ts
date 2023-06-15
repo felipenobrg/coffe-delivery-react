@@ -15,37 +15,7 @@ export const CoffesAvailableContainer = styled.div`
   img {
     width: 50%;
   }
-
-  h4 {
-    display: flex;
-    gap: 1rem;
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.7rem;
-    padding: 0.2rem;
-    border-radius: 8px;
-    color:  ${(props) => props.theme['yellow-dark']};;
-    background: ${(props) => props.theme['yellow-light']};
-   }
-
-  h2 {
-    font-family: 'Baloo 2';
-    margin-top: -0.2rem;
-    font-size: 1.2rem;
-  }
-
-  p {
-    color: ${(props) => props.theme['base-label']};
-    font-size: 0.8rem;
-    margin-top: -0.2rem;
-    text-align: center;
-  }
-
-  .coffe-price {
-    font-family: 'Baloo 2';
-    font-size: 1.3rem;
-    color: ${(props) => props.theme['black']};
-  }
-
+  
   button {    
     padding: 0.3rem;
     border: 0;
@@ -65,6 +35,12 @@ export const CoffesAvailableContainer = styled.div`
   }
 `
 
+export const Title = styled.div`
+    font-family: 'Baloo 2';
+    margin-top: -0.2rem;
+    font-size: 1.2rem;
+`
+
 export const Tags = styled.div`
   width: 100%;
   display: flex;
@@ -79,9 +55,21 @@ export const Tags = styled.div`
   span {
     background: ${( props ) => props.theme["yellow-light"]};
     color: ${( props ) => props.theme["yellow-dark"]};
-    text-transform: uppercase;
     padding: 0.25rem 0.5rem;
     border-radius: 999px;
     font-weight: 700;
   }
 `;
+
+export const Description = styled.div`
+    color: ${(props) => props.theme['base-label']};
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+`
+
+export const Price = styled.div`
+    font-family: 'Baloo 2';
+    font-size: 1.3rem;
+    color: ${(props) => props.theme['black']};
+`

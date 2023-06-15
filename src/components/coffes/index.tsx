@@ -1,5 +1,5 @@
 import { ShoppingCart } from "phosphor-react";
-import { CoffesAvailableContainer, Tags } from "./styles";
+import { CoffesAvailableContainer, Description, Price, Tags, Title } from "./styles";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -39,9 +39,9 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
             <span key={`${coffee.id}${tag}`}>{tag}</span>
           ))}
           </Tags>
-          <h2>{coffee.title}</h2>
-          <p>{coffee.description}</p>
-          <p className="coffe-price">{coffee.price}</p>
+          <Title>{coffee.title}</Title>
+          <Description>{coffee.description}</Description>
+          <Price className="coffe-price">{coffee.price}</Price>
           <div className="coffe-amount">
             <button onClick={handleDecrease}>-</button>
             <span className="amount">{count}</span>
