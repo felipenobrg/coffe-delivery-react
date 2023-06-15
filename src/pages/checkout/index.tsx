@@ -3,10 +3,14 @@ import { CheckoutContainer } from "./styles";
 import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-react";
 import { NavLink } from "react-router-dom";
 
-export const Checkout = () => (
+export const Checkout = () => {
+ 
+
+  return (
   <>
       <Header />
       <CheckoutContainer>
+        
         <h2>Complete seu pedido</h2>
         <div className="main-row">
         <div className="form-container">
@@ -57,4 +61,5 @@ export const Checkout = () => (
         </div>
       </CheckoutContainer>
   </>
-);
+  )
+}

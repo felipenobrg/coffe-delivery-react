@@ -17,6 +17,8 @@ export const CoffesAvailableContainer = styled.div`
   }
 
   h4 {
+    display: flex;
+    gap: 1rem;
     font-family: 'Roboto', sans-serif;
     font-size: 0.7rem;
     padding: 0.2rem;
@@ -62,3 +64,24 @@ export const CoffesAvailableContainer = styled.div`
     margin-bottom: 1rem;
   }
 `
+
+export const Tags = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+
+  span {
+    background: ${( props ) => props.theme["yellow-light"]};
+    color: ${( props ) => props.theme["yellow-dark"]};
+    text-transform: uppercase;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+`;

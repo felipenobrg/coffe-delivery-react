@@ -1,18 +1,21 @@
-import { createContext, useState } from "react";
+// import { ReactNode, createContext, useState } from "react";
 
-interface CoffeContextType {
-    count: number
-    setCount: number
-}
+// interface CoffeContextType {
+//     coffeAmount: number
+// }
 
-export const CoffeContext = createContext({} as CoffeContextType)
+// interface CoffeContextProps {
+//     children: ReactNode
+// }
 
-export function CoffeContextProvider({ children }) {
-    const [count, setCount] = useState(1);
+// export const CoffeContext = createContext({} as CoffeContextType)
+
+// export function CoffeContextProvider({ children }: CoffeContextProps) {
+//     const [coffeAmount, setCoffeAmount] = useState(0)
     
-    return (
-        <CoffeContext.Provider value={count}>
-         {children}
-       </CoffeContext.Provider>
-    )
-}
+//     return (
+//         <CoffeContext.Provider value={{ coffeAmount }}>
+//          {children}
+//        </CoffeContext.Provider>
+//     )
+// }

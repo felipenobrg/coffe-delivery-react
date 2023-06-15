@@ -1,5 +1,5 @@
 import { ShoppingCart } from "phosphor-react";
-import { CoffesAvailableContainer } from "./styles";
+import { CoffesAvailableContainer, Tags } from "./styles";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
@@ -17,6 +17,7 @@ interface CoffeeProps {
   coffee: Coffee;
 }
 
+
 export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   const [count, setCount] = useState(1);
 
@@ -32,11 +33,12 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   };
 
   return (
-    <>
-  
         <CoffesAvailableContainer>
           <img src={coffee.srcImg} alt="" />
-          <h4>{coffee.tags}</h4>
+          <Tags>{coffee.tags.map(tag => (
+            <span key={`${coffee.id}${tag}`}>{tag}</span>
+          ))}
+          </Tags>
           <h2>{coffee.title}</h2>
           <p>{coffee.description}</p>
           <p className="coffe-price">{coffee.price}</p>
@@ -51,8 +53,5 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
             </NavLink>
           </div>
         </CoffesAvailableContainer>
-    </>
   );
 }
-
-
