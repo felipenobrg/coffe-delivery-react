@@ -47,7 +47,7 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
             <span className="amount">{count}</span>
             <button onClick={handleIncrease}>+</button>
             <button className="shopping-cart">
-              <ShoppingCart size={13} weight="fill" color="#fff" />
+              <ShoppingCart size={16} weight="fill" color="#fff" />
             </button>
           </div>
         </CoffesAvailableContainer>

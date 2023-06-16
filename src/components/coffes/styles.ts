@@ -5,7 +5,7 @@ export const CoffesAvailableContainer = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: space-between;
-  height: 20%rem;
+  height: 30%;
   width: 20%;
   border-radius: 9px;
   margin-left: 3.9rem;
@@ -17,7 +17,7 @@ export const CoffesAvailableContainer = styled.div`
   }
   
   button {    
-    padding: 0.3rem;
+    padding: 0.6rem;
     border: 0;
     background: ${(props) => props.theme['base-button']};
     cursor: pointer;
@@ -25,13 +25,19 @@ export const CoffesAvailableContainer = styled.div`
 
   .shopping-cart {
     margin-left: 0.3rem;
-    padding: 0.3rem;
+    padding: 0.4rem;
     border-radius: 3px;
     background: ${(props) => props.theme['purple-dark']};
   }
 
   .coffe-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    background: ${(props) => props.theme['base-button']};
   }
 `
 
