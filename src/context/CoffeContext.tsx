@@ -16,6 +16,7 @@ export const CoffeContext = createContext({} as CoffeContextType)
 
 export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     const [cartItems, setCartItems] = useState<CartItem[]>([])
+
         
     return (
         <CoffeContext.Provider value={{ cartItems }}>

@@ -46,11 +46,9 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
             <button onClick={handleDecrease}>-</button>
             <span className="amount">{count}</span>
             <button onClick={handleIncrease}>+</button>
-            <NavLink to={"/checkout"}>
             <button className="shopping-cart">
               <ShoppingCart size={13} weight="fill" color="#fff" />
             </button>
-            </NavLink>
           </div>
         </CoffesAvailableContainer>
   );
