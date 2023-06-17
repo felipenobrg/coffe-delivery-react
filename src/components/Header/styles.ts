@@ -37,15 +37,9 @@ export const HeaderContainer = styled.header`
   @media (max-width: 768px) {
     margin: 2rem;
     flex-direction: column;
-  
 
   span button {
-    margin-top: 2rem;
     margin-left: 17rem;
-  }
-
-  p {
-    display: none;
   }
 }
 `
@@ -59,4 +53,8 @@ export const CartAmount = styled.span`
   border-radius: 999px;
   position: absolute;
   top: 20px;
+
+  @media (max-width: 768px) { 
+    display: none;
+  }
 `

@@ -1,7 +1,6 @@
 import { ShoppingCart } from "phosphor-react";
-import { CoffesAvailableContainer, Description, Price, Tags, Title } from "./styles";
+import { ButtonCoffe, CoffeAmountContainer, CoffeAmountSpan, CoffesAvailableContainer, Description, ImgCoffe, Price, ShoppingCartContainer, Tags, Title } from "./styles";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 export interface Coffee {
   id: string;
@@ -34,22 +33,22 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
 
   return (
         <CoffesAvailableContainer>
-          <img src={coffee.srcImg} alt="" />
+          <ImgCoffe src={coffee.srcImg} alt="" />
           <Tags>{coffee.tags.map(tag => (
             <span key={`${coffee.id}${tag}`}>{tag}</span>
           ))}
           </Tags>
           <Title>{coffee.title}</Title>
           <Description>{coffee.description}</Description>
-          <Price className="coffe-price">{coffee.price}</Price>
-          <div className="coffe-amount">
-            <button onClick={handleDecrease}>-</button>
-            <span className="amount">{count}</span>
-            <button onClick={handleIncrease}>+</button>
-            <button className="shopping-cart">
-              <ShoppingCart size={16} weight="fill" color="#fff" />
-            </button>
-          </div>
+          <Price>R${coffee.price}</Price>
+          <CoffeAmountContainer>
+            <ButtonCoffe onClick={handleDecrease}>-</ButtonCoffe>
+            <CoffeAmountSpan>{count}</CoffeAmountSpan>
+            <ButtonCoffe onClick={handleIncrease}>+</ButtonCoffe>
+            <ShoppingCartContainer>
+              <ShoppingCart size={18} weight="fill" color="#fff" />
+            </ShoppingCartContainer>
+          </CoffeAmountContainer>
         </CoffesAvailableContainer>
   );
 }
