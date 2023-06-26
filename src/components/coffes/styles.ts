@@ -94,7 +94,7 @@ export const Price = styled.div`
     color: ${(props) => props.theme['black']};
 `
 
-export const ShoppingCartContainer = styled.div`
+export const ShoppingCartContainer = styled.button`
     display: flex;
     align-items: center;
     cursor: pointer;

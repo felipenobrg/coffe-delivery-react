@@ -1,5 +1,6 @@
 import { ShoppingCart } from "phosphor-react";
 import { ButtonCoffe, CoffeAmountContainer, CoffeAmountSpan, CoffesAvailableContainer, Description, ImgCoffe, Price, ShoppingCartContainer, Tags, Title } from "./styles";
+import { useCart } from "../../hooks/useCoffeContext";
 import { useState } from "react";
 
 export interface Coffee {
@@ -18,18 +19,24 @@ interface CoffeeProps {
 
 
 export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
-  const [count, setCount] = useState(1);
+  const [quantity, setQuantity] = useState(1)
 
   const handleIncrease = () => {
-    setCount((state) => state + 1);
-  };
-
+    setQuantity(state => state + 1)
+  }
+  
   const handleDecrease = () => {
-    setCount((state) => state - 1);
-    if (count <= 0) {
-      setCount(0);
+    setQuantity(state => state - 1)
+  }
+
+  const { addCoffeToCart } = useCart()
+  const handleAddToCart = () => {
+    const coffeetoAdd = {
+      ...coffee,
+      quantity: 1
     }
-  };
+    addCoffeToCart(coffeetoAdd)
+  }
 
   return (
         <CoffesAvailableContainer>
@@ -43,9 +50,9 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
           <Price>R${coffee.price}</Price>
           <CoffeAmountContainer>
             <ButtonCoffe onClick={handleDecrease}>-</ButtonCoffe>
-            <CoffeAmountSpan>{count}</CoffeAmountSpan>
+            <CoffeAmountSpan>{quantity}</CoffeAmountSpan>
             <ButtonCoffe onClick={handleIncrease}>+</ButtonCoffe>
-            <ShoppingCartContainer>
+            <ShoppingCartContainer onClick={handleAddToCart}>
               <ShoppingCart size={18} weight="fill" color="#fff" />
             </ShoppingCartContainer>
           </CoffeAmountContainer>
