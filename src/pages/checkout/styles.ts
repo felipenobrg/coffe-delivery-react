@@ -5,17 +5,17 @@ export const CheckoutContainer = styled.div`
   flex-direction: column;
   font-family: 'Baloo 2', sans-serif;  
 
-  .main-row {
-    display: flex;
-    gap: 1rem;
-  }
-
+  
   h2 {
     margin-left: 2rem;
   }
 
+  .main-row {
+    display: flex;
+  }
+
   .form-container {
-    width: 51%;
+    min-width: 50rem;
     height: 22rem;
     padding: 2rem;
     margin-left: 3rem;
@@ -59,12 +59,11 @@ export const CheckoutContainer = styled.div`
 
   .coffe-select-container {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-direction: column; 
     align-items: center;
-    background-color: red;
-    width: 35%;
+    min-width: 25%;
     height: 32rem;
+    margin-left: 2rem;
     border-radius: 9px;
     background: ${(props) => props.theme['base-input']};
     font-family: 'Roboto', sans-serif;
@@ -93,7 +92,7 @@ export const CheckoutContainer = styled.div`
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     background: ${(props) => props.theme['base-input']};
-    width: 56%;
+    width: 54rem;
     height: 11rem;
     margin-left: 3rem;
     border-radius: 9px;

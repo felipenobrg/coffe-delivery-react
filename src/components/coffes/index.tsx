@@ -30,12 +30,13 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   }
 
   const { addCoffeToCart } = useCart()
+  
   const handleAddToCart = () => {
-    const coffeetoAdd = {
+    const coffeeToAdd = {
       ...coffee,
-      quantity: 1
+      quantity,
     }
-    addCoffeToCart(coffeetoAdd)
+    addCoffeToCart(coffeeToAdd)
   }
 
   return (
@@ -49,7 +50,7 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
           <Description>{coffee.description}</Description>
           <Price>R${coffee.price}</Price>
           <CoffeAmountContainer>
-            <ButtonCoffe onClick={handleDecrease}>-</ButtonCoffe>
+            <ButtonCoffe disabled={quantity <= 1} onClick={handleDecrease}>-</ButtonCoffe>
             <CoffeAmountSpan>{quantity}</CoffeAmountSpan>
             <ButtonCoffe onClick={handleIncrease}>+</ButtonCoffe>
             <ShoppingCartContainer onClick={handleAddToCart}>

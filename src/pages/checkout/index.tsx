@@ -4,14 +4,12 @@ import { Bank, CreditCard, CurrencyDollar, MapPinLine, Money } from "phosphor-re
 import { NavLink } from "react-router-dom";
 
 export const Checkout = () => {
- 
-
   return (
   <>
       <Header />
       <CheckoutContainer>
-        
         <h2>Complete seu pedido</h2>
+        
         <div className="main-row">
         <div className="form-container">
           <p> <MapPinLine size={22} color="#C47F17" /> Endereço de Entrega</p>

@@ -6,7 +6,6 @@ export const HeaderContainer = styled.header`
   gap: 1rem;
   background: ${(props) => props.theme['white']};
   padding: 0.4rem;
-  margin-left: 4rem;
   position: sticky;
   top: 0;
   position: 0;
@@ -17,7 +16,7 @@ export const HeaderContainer = styled.header`
     gap: 0.3rem;
     background: ${(props) => props.theme['purple-light']};
     color: ${(props) => props.theme['purple-dark']};
-    padding: 0.3rem;
+    padding: 0.5rem;
     border-radius: 8px;
     font-size: 1rem;
     height: 1.5rem;
@@ -28,7 +27,7 @@ export const HeaderContainer = styled.header`
   span button {
     cursor: pointer;
     background: ${(props) => props.theme['yellow-light']};
-    padding: 0.3rem;
+    padding: 0.5rem;
     border: 0;
     border-radius: 9px;
     margin: 1rem 7rem 0 0;
