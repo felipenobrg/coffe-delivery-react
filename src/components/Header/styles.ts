@@ -51,7 +51,7 @@ export const CartAmount = styled.span`
   height: 0.9rem;
   border-radius: 999px;
   position: absolute;
-  top: 20px;
+  top: 15px;
 
   @media (max-width: 768px) { 
     display: none;
