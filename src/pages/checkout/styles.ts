@@ -4,8 +4,8 @@ export const CheckoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: 'Baloo 2', sans-serif;  
+  min-width: 90%;
 
-  
   h2 {
     margin-left: 2rem;
   }
@@ -13,8 +13,8 @@ export const CheckoutContainer = styled.div`
   .main-row {
     display: flex;
   }
-
-  .form-container {
+`
+  export const AdressContainer = styled.div`
     min-width: 50rem;
     height: 22rem;
     padding: 2rem;
@@ -22,6 +22,14 @@ export const CheckoutContainer = styled.div`
     font-family: 'Roboto', sans-serif;
     background: ${(props) => props.theme['base-input']};
     border-radius: 9px;
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+    color: ${(props) => props.theme['base-text']};
+    margin-bottom: 2rem;
   }
 
   input {
@@ -56,8 +64,9 @@ export const CheckoutContainer = styled.div`
   .uf {
     width: 10%;
   }
+  `
 
-  .coffe-select-container {
+  export const SelectedCoffe = styled.div`
     display: flex;
     flex-direction: column; 
     align-items: center;
@@ -67,11 +76,10 @@ export const CheckoutContainer = styled.div`
     border-radius: 9px;
     background: ${(props) => props.theme['base-input']};
     font-family: 'Roboto', sans-serif;
-  }
 
-  .coffe-select-container button {
+  button {
     cursor: pointer;
-    width: 100%;
+    min-width: 80%;
     padding: 0.8rem;
     color: ${(props) => props.theme['white']};;
     background: ${(props) => props.theme['yellow']};
@@ -85,8 +93,8 @@ export const CheckoutContainer = styled.div`
     margin-right: 57%;
     background: ${(props) => props.theme['base-input']};
   }
-
-  .payment-container {
+`
+  export const PaymentContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -97,7 +105,12 @@ export const CheckoutContainer = styled.div`
     margin-left: 3rem;
     border-radius: 9px;
     margin-top: -5rem;
-  }
+
+    .p-payment {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
 
   .payment-div {
     margin-left: 2rem;
@@ -109,12 +122,19 @@ export const CheckoutContainer = styled.div`
   }
 
   .button-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
     margin-left: 1rem;
   }
 
   .button-container button {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
     background: ${(props) => props.theme['base-button']};
-    padding: 0.8rem;
+    padding: 1rem;
     border-radius: 9px;
     border: none;
     margin-right: 0.3rem;

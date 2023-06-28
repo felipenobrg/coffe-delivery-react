@@ -10,6 +10,10 @@ export const HeaderContainer = styled.header`
   top: 0;
   position: 0;
 
+  img {
+    margin-left: 2rem;
+  }
+
   p {
     display: flex;
     align-items: center;
@@ -30,7 +34,7 @@ export const HeaderContainer = styled.header`
     padding: 0.5rem;
     border: 0;
     border-radius: 9px;
-    margin: 1rem 7rem 0 0;
+    margin: 1rem 5rem 0 0;
   }
 
   @media (max-width: 768px) {
