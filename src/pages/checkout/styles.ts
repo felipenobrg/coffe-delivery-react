@@ -9,10 +9,9 @@ export const CheckoutContainer = styled.div`
   h2 {
     margin-left: 2rem;
   }
-
-  .main-row {
+`
+  export const MainRow = styled.div`
     display: flex;
-  }
 `
   export const AdressContainer = styled.div`
     min-width: 50rem;
@@ -66,7 +65,7 @@ export const CheckoutContainer = styled.div`
   }
   `
 
-  export const SelectedCoffe = styled.div`
+  export const SelectedCoffeContainer = styled.div`
     display: flex;
     flex-direction: column; 
     align-items: center;
