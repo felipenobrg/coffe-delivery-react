@@ -1,7 +1,9 @@
 import { Bank, CreditCard, CurrencyDollar, Money } from "phosphor-react"
+import { PaymentMethodsContainer } from "./styles"
 
 export const PaymentMethods = () => {
     return (
+      <PaymentMethodsContainer>
         <div className="payment-div">
         <p className="p-payment">
           <CurrencyDollar size={20} color="#8047F8" weight="fill" />{" "}
@@ -24,6 +26,7 @@ export const PaymentMethods = () => {
             <Money size={18} color="#8047F8" /> DINHEIRO
           </button>
         </div>
-      </div>
+        </div>
+      </PaymentMethodsContainer>
     )
 }

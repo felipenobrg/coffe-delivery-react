@@ -68,7 +68,6 @@ export const CoffeAmountContainer = styled.div`
     margin-bottom: 1rem;
     font-size: 1.2rem;
     font-family: 'Roboto', sans-serif;
-    background: ${(props) => props.theme['base-button']};
 `
 
 export const ButtonCoffe = styled.button`
@@ -86,12 +85,22 @@ export const ButtonCoffe = styled.button`
 
 export const CoffeAmountSpan = styled.span`
     font-family: 'Roboto', sans-serif;
+    background: ${(props) => props.theme['base-button']};
+    padding: 0.4rem;
 `
 
 export const Price = styled.div`
     font-family: 'Baloo 2', sans-serif;
     font-size: 1.3rem;
     color: ${(props) => props.theme['black']};
+    background: ${(props) => props.theme['base-card']};
+    margin-right: 0.8rem;
+
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
+      margin-right: 0.16rem;
+    }
 `
 
 export const ShoppingCartContainer = styled.button`

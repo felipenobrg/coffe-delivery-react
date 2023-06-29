@@ -1,6 +1,6 @@
+
 export const Input = () => {
     return (
-        <>       
         <form className="form">
           <input className="cep" type="number" placeholder="CEP" />
           <input type="text" placeholder="Rua" />
@@ -14,6 +14,5 @@ export const Input = () => {
           <input className="uf" type="text" placeholder="UF" />
           </div>
         </form>
-        </>
     )
 }

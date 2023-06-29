@@ -7,8 +7,6 @@ import {
   AdressContainer,
   CheckoutContainer,
   MainRow,
-  PaymentContainer,
-  SelectedCoffeContainer,
 } from "./styles";
 
 export const Checkout = () => {
@@ -22,15 +20,10 @@ export const Checkout = () => {
             <EnterAdress />
             <Input />
           </AdressContainer>
-
-          <SelectedCoffeContainer>
-            <SelectedCoffe />
-          </SelectedCoffeContainer>
+   
+          <SelectedCoffe />
         </MainRow>
-
-        <PaymentContainer>
-          <PaymentMethods />
-        </PaymentContainer>
+        <PaymentMethods />
       </CheckoutContainer>
     </>
   );
