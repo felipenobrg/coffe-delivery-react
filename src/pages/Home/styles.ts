@@ -23,7 +23,7 @@ export const SectionContainer = styled.section`
     margin-top: -1.5rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     margin-left: 2rem;
 
     img {
@@ -65,7 +65,7 @@ export const IconsContainer = styled.div`
     margin-left: 1.8rem;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     display: flex;
     flex-wrap: wrap;
 
@@ -82,8 +82,4 @@ export const IconsContainer = styled.div`
 export const OurCoffes = styled.h1`
    margin-left: 4.3rem;
    font-family: 'Baloo 2', sans-serif;
-`
-
-export const CoffeStyle = styled.div`
-  display: flex;
 `

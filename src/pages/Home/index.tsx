@@ -3,7 +3,7 @@ import {
   IconsContainer,
   OurCoffes,
   SectionContainer,
-} from "../../styles.ts";
+} from "./styles.ts";
 import "../../styles/global.ts";
 import { Header } from "../../components/Header/index.tsx";
 import { CoffesCards } from "../../components/CoffesCards/index.tsx";
