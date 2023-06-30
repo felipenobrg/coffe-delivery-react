@@ -14,7 +14,6 @@ export const SelectedCoffeContainer = styled.div`
   h2 {
     margin-top: -3rem;
   }
-    
 `;
 
 export const ConfirmOrder = styled.button`
@@ -31,11 +30,17 @@ export const ConfirmOrder = styled.button`
 
   &&:hover {
     transition: 0.3s ease;
-    background: ${(props) => props.theme["yellow-dark"]};;
+    background: ${(props) => props.theme["yellow-dark"]};
   }
 `;
 
-
 export const AmountItens = styled.div`
-   margin-left: 1rem;
-`
+  margin-left: 3rem;
+`;
+
+export const TotalItems = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18rem;
+`;

@@ -21,6 +21,9 @@ export const CoffeImg = styled.img`
 
 export const Price = styled.p`
   font-weight: bold;
+  margin-left: 5rem;
+  color: ${(props) => props.theme["base-text"]};
+  font-size: 1.1rem;
 `;
 
 export const NameCoffee = styled.p`
@@ -31,7 +34,7 @@ export const NameCoffee = styled.p`
 export const Buttons = styled.div`
   display: flex;
   align-items: center;
-  margin: -2.2rem 0 0 5.8rem;
+  margin: -3.2rem 0 0 7.7rem;
 `;
 
 export const IncreaseDecrease = styled.button`
