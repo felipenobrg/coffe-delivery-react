@@ -20,7 +20,6 @@ export const Checkout = () => {
             <EnterAdress />
             <Input />
           </AdressContainer>
-   
           <SelectedCoffe />
         </MainRow>
         <PaymentMethods />

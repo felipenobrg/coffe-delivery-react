@@ -4,7 +4,6 @@ export const CheckoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
-  min-width: 90%;
 
   h2 {
     margin-left: 2rem;
@@ -14,7 +13,7 @@ export const MainRow = styled.div`
   display: flex;
 `;
 export const AdressContainer = styled.div`
-  min-width: 50rem;
+  width: 50rem;
   height: 22rem;
   padding: 2rem;
   margin-left: 3rem;
