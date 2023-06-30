@@ -11,7 +11,7 @@ export const HeaderContainer = styled.header`
   position: 0;
 
   img {
-    margin-left: 2rem;
+    margin-left: 4rem;
   }
 
   p {
