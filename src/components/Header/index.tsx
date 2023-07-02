@@ -10,12 +10,12 @@ export const Header = () => {
     <HeaderContainer>
       <img src="./src/assets/coffe-logo.svg" alt="" />
       <p>
-        <MapPin size={22} color="#4B2995" weight="fill" /> João Pessoa, PB
+        <MapPin size={18} color="#8047F8" weight="fill" /> João Pessoa, PB
       </p>
       <span>
         <button>
           <NavLink to={"/checkout"}>
-            <ShoppingCart size={22} color="#C47F17" weight="fill" />
+            <ShoppingCart size={18} color="#C47F17" weight="fill" />
             <CartAmount>{cartQuantity}</CartAmount>
           </NavLink>
         </button>

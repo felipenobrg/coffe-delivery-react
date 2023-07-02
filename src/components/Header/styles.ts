@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   background: ${(props) => props.theme["white"]};
-  padding: 0.4rem;
+  padding: 1rem;
   position: sticky;
   top: 0;
   position: 0;
@@ -20,10 +21,9 @@ export const HeaderContainer = styled.header`
     gap: 0.3rem;
     background: ${(props) => props.theme["purple-light"]};
     color: ${(props) => props.theme["purple-dark"]};
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 8px;
     font-size: 1rem;
-    height: 1.5rem;
     font-family: "Roboto", sans-serif;
     margin-left: auto;
   }
@@ -31,41 +31,41 @@ export const HeaderContainer = styled.header`
   span button {
     cursor: pointer;
     background: ${(props) => props.theme["yellow-light"]};
-    padding: 0.5rem;
+    padding: 0.6rem;
     border: 0;
     border-radius: 9px;
-    margin: 1rem 5rem 0 0;
+    margin-right: 4rem;
   }
 
   @media (max-width: 600px) {
-    flex-direction: column;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     p {
+      font-size: 0.9rem;
+     }
 
-    p {
-      margin-right: auto;
-    }
-
-    img {
-      width: 10rem;
-      margin-top: 2rem;
-    }
-
-    span button {
-      margin-right: 100rem;
-    }
+     p svg {
+      width: 2.1rem;
+     }
+  
   }
 `;
 
 export const CartAmount = styled.span`
   background: ${(props) => props.theme["yellow-dark"]};
+  font-weight: bold;
   color: ${(props) => props.theme["white"]};
   padding: 0.2rem;
   width: 0.9rem;
   height: 0.9rem;
   border-radius: 999px;
   position: absolute;
-  top: 15px;
+  top: 22px;
 
-  @media (max-width: 768px) {
-    display: none;
+  @media (max-width: 600px) {
+    top: 30px;
+
   }
 `;

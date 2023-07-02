@@ -27,7 +27,9 @@ export const SectionContainer = styled.section`
     margin-left: 2rem;
 
     img {
-      display: none;
+      width: 20rem;
+      margin: 0 auto;
+      margin-top: 2rem;
     }
   }
 `
@@ -73,6 +75,8 @@ export const IconsContainer = styled.div`
     .package-icon,
     .timer-icon,
     .coffe-icon {
+      display: flex;
+      flex-direction: column;
       margin-bottom: 0.5rem;
     }
     
