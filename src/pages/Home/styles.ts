@@ -27,8 +27,7 @@ export const SectionContainer = styled.section`
     margin-left: 2rem;
 
     img {
-      width: 100%;
-      margin-bottom: 1.5rem;
+      display: none;
     }
   }
 `
@@ -67,6 +66,7 @@ export const IconsContainer = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 
     .shoppingCart-icon,
@@ -82,4 +82,8 @@ export const IconsContainer = styled.div`
 export const OurCoffes = styled.h1`
    margin-left: 4.3rem;
    font-family: 'Baloo 2', sans-serif;
+`
+
+export const CoffeStyle = styled.div`
+  display: flex;
 `

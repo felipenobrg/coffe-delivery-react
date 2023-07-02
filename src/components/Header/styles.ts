@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  background: ${(props) => props.theme['white']};
+  background: ${(props) => props.theme["white"]};
   padding: 0.4rem;
   position: sticky;
   top: 0;
@@ -18,38 +18,46 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     gap: 0.3rem;
-    background: ${(props) => props.theme['purple-light']};
-    color: ${(props) => props.theme['purple-dark']};
+    background: ${(props) => props.theme["purple-light"]};
+    color: ${(props) => props.theme["purple-dark"]};
     padding: 0.5rem;
     border-radius: 8px;
     font-size: 1rem;
     height: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-left: auto;
   }
- 
+
   span button {
     cursor: pointer;
-    background: ${(props) => props.theme['yellow-light']};
+    background: ${(props) => props.theme["yellow-light"]};
     padding: 0.5rem;
     border: 0;
     border-radius: 9px;
     margin: 1rem 5rem 0 0;
   }
 
-  @media (max-width: 768px) {
-    margin: 2rem;
+  @media (max-width: 600px) {
     flex-direction: column;
 
-  span button {
-    margin-left: 17rem;
+    p {
+      margin-right: auto;
+    }
+
+    img {
+      width: 10rem;
+      margin-top: 2rem;
+    }
+
+    span button {
+      margin-right: 100rem;
+    }
   }
-}
-`
+`;
 
 export const CartAmount = styled.span`
-  background:${(props) => props.theme['yellow-dark']};
-  color:${(props) => props.theme['white']};;
+  background: ${(props) => props.theme["yellow-dark"]};
+  color: ${(props) => props.theme["white"]};
   padding: 0.2rem;
   width: 0.9rem;
   height: 0.9rem;
@@ -57,7 +65,7 @@ export const CartAmount = styled.span`
   position: absolute;
   top: 15px;
 
-  @media (max-width: 768px) { 
+  @media (max-width: 768px) {
     display: none;
   }
-`
+`;
