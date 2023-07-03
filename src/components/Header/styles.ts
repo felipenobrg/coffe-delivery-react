@@ -23,7 +23,6 @@ export const HeaderContainer = styled.header`
     color: ${(props) => props.theme["purple-dark"]};
     padding: 0.6rem;
     border-radius: 8px;
-    font-size: 1rem;
     font-family: "Roboto", sans-serif;
     margin-left: auto;
   }
@@ -44,10 +43,12 @@ export const HeaderContainer = styled.header`
      
      p {
       font-size: 0.9rem;
+      min-width: 6rem;
+      height: 2.2rem;
      }
 
-     p svg {
-      width: 2.1rem;
+     span button {
+      padding: 1rem;
      }
   
   }
@@ -65,7 +66,7 @@ export const CartAmount = styled.span`
   top: 22px;
 
   @media (max-width: 600px) {
-    top: 30px;
+    top: 20px
 
   }
 `;

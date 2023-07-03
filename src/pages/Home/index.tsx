@@ -23,7 +23,7 @@ function App() {
           </p>
         </div>
         <IconsContainer>
-          <div>
+          <div className="column">
             <ShoppingCart
               className="shoppingCart-icon"
               weight="fill"
@@ -46,9 +46,8 @@ function App() {
         />
       </SectionContainer>
       <OurCoffes>Nossos cafés</OurCoffes>
-  
-        <CoffesCards />
-    
+
+      <CoffesCards />
     </>
   );
 }

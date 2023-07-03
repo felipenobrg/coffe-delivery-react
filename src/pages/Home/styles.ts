@@ -76,8 +76,7 @@ export const IconsContainer = styled.div`
     .timer-icon,
     .coffe-icon {
       display: flex;
-      flex-direction: column;
-      margin-bottom: 0.5rem;
+      
     }
     
   }
