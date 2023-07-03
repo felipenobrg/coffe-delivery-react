@@ -24,10 +24,10 @@ export const SectionContainer = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin-left: 2rem;
+    margin: 1rem 0 0 2rem;
 
     img {
-      width: 20rem;
+      width: 18rem;
       margin: 0 auto;
       margin-top: 2rem;
     }
@@ -35,6 +35,9 @@ export const SectionContainer = styled.section`
 `
 
 export const IconsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   margin-top: 1rem;
   font-family: 'Roboto', sans-serif;
   .shoppingCart-icon,
@@ -58,7 +61,6 @@ export const IconsContainer = styled.div`
 
   .timer-icon {
     background: ${(props) => props.theme['yellow']};
-    margin-top: 1rem;
   }
 
   .coffe-icon {
@@ -68,17 +70,21 @@ export const IconsContainer = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
 
     .shoppingCart-icon,
     .package-icon,
     .timer-icon,
     .coffe-icon {
-      display: flex;
-      
+      display: flex; 
     }
-    
+
+    .package-icon {
+      margin-left: 0.1rem;
+    }
+
+    .coffe-icon {
+      margin-left: 0.1rem;
+    }
   }
 `
 

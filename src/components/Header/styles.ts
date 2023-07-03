@@ -44,11 +44,7 @@ export const HeaderContainer = styled.header`
      p {
       font-size: 0.9rem;
       min-width: 6rem;
-      height: 2.2rem;
-     }
-
-     span button {
-      padding: 1rem;
+      height: 1.3rem;
      }
   
   }
@@ -67,6 +63,5 @@ export const CartAmount = styled.span`
 
   @media (max-width: 600px) {
     top: 20px
-
   }
 `;
