@@ -8,9 +8,17 @@ export const CheckoutContainer = styled.div`
   h2 {
     margin-left: 2rem;
   }
+ 
 `;
 export const MainRow = styled.div`
   display: flex;
+
+  @media (max-width: 600px) {
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 5rem;
+  }
 `;
 export const AdressContainer = styled.div`
   width: 50rem;
@@ -61,5 +69,14 @@ export const AdressContainer = styled.div`
 
   .uf {
     width: 10%;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    
+   
   }
 `;

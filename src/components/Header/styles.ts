@@ -1,11 +1,12 @@
 import styled from "styled-components";
-
 export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+
   background: ${(props) => props.theme["white"]};
+  
   padding: 1rem;
   position: sticky;
   top: 0;

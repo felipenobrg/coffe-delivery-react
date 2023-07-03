@@ -1,10 +1,20 @@
 import styled from "styled-components";
+import introBackgroundImg from '../../assets/Background.png'
+
 export const SectionContainer = styled.section`
-  margin: 3rem 0 0 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: ${() => `url(${introBackgroundImg})`};
+  background-size: cover;
+
+  width: 100%;
+
+  margin-top: 3rem;
 
   img {
-    width: 40%;
-    margin-left: 40rem;
+    width: 30%;
+    margin-left: 55rem;
     margin-top: -18rem;
   }
 
@@ -12,6 +22,7 @@ export const SectionContainer = styled.section`
     display: flex;
     flex-direction: column;     
     font-family: 'Roboto', sans-serif;
+    margin-left: 4rem;
   }
 
   .about-coffee-section h1 {
@@ -39,6 +50,7 @@ export const IconsContainer = styled.div`
   flex-direction: column;
   gap: 0.5rem;
   margin-top: 1rem;
+  margin-left: 4rem;
   font-family: 'Roboto', sans-serif;
   .shoppingCart-icon,
   .package-icon,
