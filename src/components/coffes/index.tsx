@@ -9,7 +9,7 @@ export interface Coffee {
   tags: string[];
   description: string;
   srcImg: string;
-  price: number;
+  price: string;
   amount: number;
 }
 
