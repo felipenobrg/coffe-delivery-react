@@ -6,12 +6,10 @@ export const PaymentMethodsContainer = styled.div`
   justify-content: center;
   font-family: "Roboto", sans-serif;
   background: ${(props) => props.theme["base-input"]};
-  max-width: 54rem;
+  width: 54rem;
   height: 11rem;
-  margin-left: 3rem;
   border-radius: 9px;
-  margin-bottom: 1rem;
-  margin-top: -21rem;
+  margin: 1rem 0 2rem 3rem;
 
   .p-payment {
     display: flex;

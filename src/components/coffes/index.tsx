@@ -17,7 +17,6 @@ interface CoffeeProps {
   coffee: Coffee;
 }
 
-
 export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   const [quantity, setQuantity] = useState(1)
 

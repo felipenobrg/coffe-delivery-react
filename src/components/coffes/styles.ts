@@ -13,13 +13,14 @@ export const CoffesAvailableContainer = styled.div`
   margin-top: 3rem;
   background: ${(props) => props.theme["base-card"]};
 
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-left: auto;
     min-width: 100%;
+    margin-top: 5rem;
   }
 `;
 
@@ -72,7 +73,7 @@ export const CoffeAmountContainer = styled.div`
 
 export const ButtonCoffe = styled.button`
   padding: 0.6rem;
-  border: 0;
+  border: none;
   background: ${(props) => props.theme["base-button"]};
   cursor: pointer;
 

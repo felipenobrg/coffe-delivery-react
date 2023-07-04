@@ -76,7 +76,5 @@ export const AdressContainer = styled.div`
     align-items: center;
     flex-direction: column;
     max-width: 100%;
-    
-   
   }
 `;

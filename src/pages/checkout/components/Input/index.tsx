@@ -1,4 +1,3 @@
-
 export const Input = () => {
     return (
         <form className="form">

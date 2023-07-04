@@ -16,6 +16,7 @@ export const TypeImage = styled.div`
 
 export const CoffeImg = styled.img`
   margin-left: 0.5rem;
+  margin-top: 1rem;
   width: 20%;
 `;
 

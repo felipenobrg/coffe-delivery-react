@@ -4,13 +4,13 @@ import introBackgroundImg from '../../assets/Background.png'
 export const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  background: ${() => `url(${introBackgroundImg})`};
+  justify-content: center;
+  align-items: flex-start;
+  background: ${() => `url(${introBackgroundImg})`} center;
   background-size: cover;
 
   width: 100%;
-
-  margin-top: 3rem;
+  margin-top: 1rem;
 
   img {
     width: 30%;
@@ -35,12 +35,16 @@ export const SectionContainer = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin: 1rem 0 0 2rem;
+    margin: 0 auto;
 
     img {
       width: 18rem;
       margin: 0 auto;
       margin-top: 2rem;
+    }
+
+    .about-coffee-section {
+      line-height: 1.1;
     }
   }
 `
@@ -102,6 +106,7 @@ export const IconsContainer = styled.div`
 
 export const OurCoffes = styled.h1`
    margin-left: 4.3rem;
+   margin-top: 5rem;
    font-family: 'Baloo 2', sans-serif;
 `
 

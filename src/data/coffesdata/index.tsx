@@ -20,7 +20,7 @@ const CoffesData = [
     tags: ['Tradicional'],
     description: 'O tradicional café feito com água quente e grãos moídos',
     srcImg: expresso,
-    price: '5,00',
+    price: '5.00',
     amount: 0,     
   },
   {
@@ -29,7 +29,7 @@ const CoffesData = [
     tags: ['Tradicional'],
     description: 'Expresso diluído, menos intenso que o tradicional',
     srcImg: americano,
-    price: '4,00',
+    price: '4.00',
     amount: 0,
   },
   {
@@ -38,7 +38,7 @@ const CoffesData = [
     tags: ['Tradicional'],
     description: 'Café expresso tradicional com espuma cremosa',
     srcImg: expresso_cremoso,
-    price: '6,00',
+    price: '6.00',
     amount: 0,
   },
   {
@@ -47,7 +47,7 @@ const CoffesData = [
     tags: ['Tradicional', 'Gelado'],
     description: 'Bebida preparada com café expresso e cubos de gelo',
     srcImg: cafe_gelado,
-    price: '7,00',
+    price: '7.00',
     amount: 0,
   },
   {
@@ -56,7 +56,7 @@ const CoffesData = [
     tags: ['Tradicional', 'Com Leite'],
     description: 'Meio a meio de expresso tradicional com leite vaporizado',
     srcImg: cafe_com_leite,
-    price: '6,00',
+    price: '6.00',
     amount: 0,
   },
   {
@@ -66,7 +66,7 @@ const CoffesData = [
     description:
       'Uma dose de café expresso, com o dobro de leite e espuma cremosa',
     srcImg: latte,
-    price: '8,00',
+    price: '8.00',
     amount: 0,
   },
   {
@@ -76,7 +76,7 @@ const CoffesData = [
     description:
       'Bebida com canela feita de doses iguais de café, leite e espuma',
     srcImg: capuccino,
-    price: '10,00',
+    price: '10.00',
     amount: 0,
   },
   {
@@ -86,7 +86,7 @@ const CoffesData = [
     description:
       'Café expresso misturado com um pouco de leite quente e espuma',
     srcImg: macchiato,
-    price: '9,00',
+    price: '9.00',
     amount: 0,
   },
   {
@@ -95,7 +95,7 @@ const CoffesData = [
     tags: ['Tradicional', 'Com Leite'],
     description: 'Café expresso com calda de chocolate, pouco leite e espuma',
     srcImg: mocaccino,
-    price: '9,00',
+    price: '9.00',
     amount: 0,
   },
   {
@@ -104,7 +104,7 @@ const CoffesData = [
     tags: ['Especial', 'Com Leite'],
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
     srcImg: chocolate_quente,
-    price: '10,00',
+    price: '10.00',
     amount: 0,
   },
   {
@@ -114,7 +114,7 @@ const CoffesData = [
     description:
       'Drink gelado de café expresso com rum, creme de leite e hortelã',
     srcImg: cubano,
-    price: '10,00',
+    price: '10.00',
     amount: 0,
   },
   {
@@ -123,7 +123,7 @@ const CoffesData = [
     tags: ['Especial'],
     description: 'Bebida adocicada preparada com café e leite de coco',
     srcImg: havaiano,
-    price: '9,00',
+    price: '9.00',
     amount: 0,
   },
   {
@@ -132,7 +132,7 @@ const CoffesData = [
     tags: ['Especial'],
     description: 'Bebida preparada com grãos de café árabe e especiarias',
     srcImg: arabe,
-    price: '8,00',
+    price: '8.00',
     amount: 0,
   },
   {
@@ -141,7 +141,7 @@ const CoffesData = [
     tags: ['Especial', 'Alcoólico'],
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',
     srcImg: irlandes,
-    price: '11,00',
+    price: '11.00',
     amount: 0,
   },
   {
@@ -151,7 +151,7 @@ const CoffesData = [
     description:
       'Uma dose de café expresso com  leite de soja e espuma cremosa',
     srcImg: latte,
-    price: '11,00',
+    price: '11.00',
     amount: 0,
   },
   {
@@ -160,7 +160,7 @@ const CoffesData = [
     tags: ['Tradicional', 'Gelado'],
     description: 'Bebida preparada com café expresso americano e cubos de gelo',
     srcImg: americano,
-    price: '4,00',
+    price: '4.00',
     amount: 0,
   },
 ];

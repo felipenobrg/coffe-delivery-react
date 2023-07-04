@@ -9,7 +9,7 @@ export const SelectedCoffe = () => {
       <h2>Café selecionados</h2>
 
       {cartItems.map((item) => {
-        <ChosenCoffe key={item.id} coffee={item} />
+        return <ChosenCoffe key={item.id} coffee={item} />
       })}
 
       <AmountItens>
