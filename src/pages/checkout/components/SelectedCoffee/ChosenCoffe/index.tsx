@@ -19,7 +19,7 @@ interface CoffeeCartCardProps {
 }
 
 export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
-  const { changeCartItemQuantity } = useCart();
+  const { changeCartItemQuantity, removeCartItem } = useCart();
 
   const handleIncrease = () => {
     changeCartItemQuantity(coffee.id, "increase")
@@ -29,8 +29,8 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
     changeCartItemQuantity(coffee.id, "decrease")
   }
 
-  const removeCart = () => {
-
+  const handleRemove = () => {
+    removeCartItem(coffee.id)
   }
 
   const coffeeTotal = coffee.price * coffee.quantity;
@@ -44,14 +44,14 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
           <Price>{formattedPrice}</Price>
         </TypeImage>
         <Buttons>
-          <IncreaseDecrease>
-            <Minus onClick={handleDecrease} size={18} color="#8047F8" />
+          <IncreaseDecrease onClick={handleDecrease} >
+            <Minus size={18} color="#8047F8" />
           </IncreaseDecrease>
           <AmountCoffee>{coffee.quantity}</AmountCoffee>
-          <IncreaseDecrease>
-            <Plus onClick={handleIncrease} size={18} color="#8047F8" />
+          <IncreaseDecrease onClick={handleIncrease}>
+            <Plus size={18} color="#8047F8" />
           </IncreaseDecrease>
-          <Remove>
+          <Remove onClick={handleRemove}>
             <Trash size={18} color="#8047F8" /> Remover
           </Remove>
         </Buttons>

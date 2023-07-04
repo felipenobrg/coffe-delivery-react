@@ -13,6 +13,7 @@ interface CoffeContextType {
     cartItemsId: number,
     type: "increase" | "decrease"
   ) => void;
+  removeCartItem: (CartItemId: number) => void;
 }
 
 interface CoffeProviderContextProps {
@@ -61,6 +62,19 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     setCartItems(newCart);
   };
 
+  const removeCartItem = (cartItemsId: number) => {
+    const newCart = produce(cartItems, (draft) => {
+      const coffeeExistsInCart = cartItems.findIndex(
+        (cartItem) => cartItem.id === cartItemsId
+      );
+
+      if (coffeeExistsInCart >= 0) {
+        draft.splice(coffeeExistsInCart, 1);
+      }
+    });
+
+    setCartItems(newCart);
+  };
 
   return (
     <CoffeContext.Provider
@@ -69,6 +83,7 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
         cartQuantity,
         addCoffeToCart,
         changeCartItemQuantity,
+        removeCartItem,
       }}
     >
       {children}
