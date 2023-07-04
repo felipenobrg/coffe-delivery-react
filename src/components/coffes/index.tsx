@@ -2,6 +2,7 @@ import { Minus, Plus, ShoppingCart } from "phosphor-react";
 import { ButtonCoffe, CoffeAmountContainer, CoffeAmountSpan, CoffesAvailableContainer, Description, ImgCoffe, Price, ShoppingCartContainer, Tags, Title } from "./styles";
 import { useCart } from "../../hooks/useCoffeContext";
 import { useState } from "react";
+import { formatMoney } from "../../utils/formatMoney";
 
 export interface Coffee {
   id: number;
@@ -9,7 +10,7 @@ export interface Coffee {
   tags: string[];
   description: string;
   srcImg: string;
-  price: string;
+  price: number;
   amount: number;
 }
 
@@ -19,6 +20,7 @@ interface CoffeeProps {
 
 export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   const [quantity, setQuantity] = useState(1)
+  const formattedPrice = formatMoney(coffee.price)
 
   const handleIncrease = () => {
     setQuantity(state => state + 1)
@@ -48,7 +50,7 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
           <Title>{coffee.title}</Title>
           <Description>{coffee.description}</Description>
           <CoffeAmountContainer> 
-          <Price><span>R$</span>{coffee.price}</Price>
+          <Price><span>R$</span>{formattedPrice}</Price>
             <ButtonCoffe disabled={quantity <= 1} onClick={handleDecrease}><Minus color="#8047F8" /></ButtonCoffe>
             <CoffeAmountSpan>{quantity}</CoffeAmountSpan>
             <ButtonCoffe onClick={handleIncrease}><Plus color="#8047F8" /></ButtonCoffe>
