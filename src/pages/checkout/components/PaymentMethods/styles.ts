@@ -7,9 +7,10 @@ export const PaymentMethodsContainer = styled.div`
   font-family: "Roboto", sans-serif;
   background: ${(props) => props.theme["base-input"]};
   width: 54rem;
-  height: 11rem;
+  height: 12rem;
   border-radius: 9px;
-  margin: 1rem 0 2rem 3rem;
+  margin: 5rem 0 0 -2rem;
+ 
 
   .p-payment {
     display: flex;
@@ -41,7 +42,7 @@ export const PaymentMethodsContainer = styled.div`
     padding: 1rem;
     border-radius: 9px;
     border: none;
-    margin-right: 0.3rem;
+    margin: -1rem 0.3rem 0 0;
     cursor: pointer;
   }
 

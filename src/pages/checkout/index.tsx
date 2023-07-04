@@ -1,7 +1,6 @@
 import { Header } from "../../components/Header";
 import { EnterAdress } from "./components/EnterAdress";
 import { Input } from "./components/Input";
-import { PaymentMethods } from "./components/PaymentMethods";
 import { SelectedCoffe } from "./components/SelectedCoffee";
 import {
   AdressContainer,
@@ -22,7 +21,6 @@ export const Checkout = () => {
           </AdressContainer>
           <SelectedCoffe />
         </MainRow>
-        <PaymentMethods />
       </CheckoutContainer>
     </>
   );
