@@ -35,7 +35,12 @@ export const NameCoffee = styled.p`
 export const Buttons = styled.div`
   display: flex;
   align-items: center;
-  margin: -3.2rem 0 0 7.7rem;
+  justify-content: center;
+  margin-top: -4rem;
+
+  @media (max-width: 600px) {
+    margin-top: 0.1rem;
+  }
 `;
 
 export const IncreaseDecrease = styled.button`

@@ -6,7 +6,7 @@ export const PaymentMethodsContainer = styled.div`
   justify-content: center;
   font-family: "Roboto", sans-serif;
   background: ${(props) => props.theme["base-input"]};
-  width: 54rem;
+  min-width: 108.5%;
   height: 12rem;
   border-radius: 9px;
   margin: 5rem 0 0 -2rem;
@@ -48,6 +48,19 @@ export const PaymentMethodsContainer = styled.div`
 
   .button-container button:hover {
     background: ${(props) => props.theme["purple-light"]};
-    transition: 0.3 ease;
+    transition: 0.3s ease;
+  }
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    .button-container button {
+      height: 3rem;
+      margin-bottom: 1rem;
+      font-size: 0.5rem;
+    }
+
+    .button-container button svg {
+      width: 2rem;
+    }
   }
 `;

@@ -1,4 +1,4 @@
-import { AmountItens, ConfirmOrder, SelectedCoffeContainer, TotalItems } from "./styles";
+import { AmountItens, ConfirmOrder, SelectedCoffeContainer, SpacinPrice, TotalItems } from "./styles";
 import { ChosenCoffe } from "./ChosenCoffe";
 import { useCart } from "../../../../hooks/useCoffeContext";
 import { formatMoney } from "../../../../utils/formatMoney";
@@ -19,15 +19,15 @@ export const SelectedCoffe = () => {
         <AmountItens>
         <TotalItems>
           <p>Total de itens</p>
-          <p>R${formattedItemTotal}</p>
+          <SpacinPrice>R${formattedItemTotal}</SpacinPrice>
         </TotalItems>
         <TotalItems>
           <p>Entrega</p>
-          <p>R$3,50</p>
+          <SpacinPrice>R$3,50</SpacinPrice>
         </TotalItems>
         <TotalItems>
           <h4>Total</h4>
-          <h4>R${formattedItemTotalPlusDelivery}</h4>
+          <SpacinPrice>R${formattedItemTotalPlusDelivery}</SpacinPrice>
         </TotalItems>
       </AmountItens>
       <ConfirmOrder disabled={cartQuantity <= 0}>CONFIRMAR PEDIDO</ConfirmOrder>

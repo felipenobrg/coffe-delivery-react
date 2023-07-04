@@ -4,24 +4,19 @@ export const CheckoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
-
-  h2 {
-    margin-left: 2rem;
-  }
- 
 `;
 export const MainRow = styled.div`
   display: flex;
 
   @media (max-width: 600px) {
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
   }
 `;
 export const AdressContainer = styled.div`
-  width: 50rem;
+  min-width: 40%;
   height: 22rem;
   padding: 2rem;
   margin-left: 3rem;
@@ -77,4 +72,8 @@ export const AdressContainer = styled.div`
     flex-direction: column;
     max-width: 100%;
   }
+`;
+
+export const CompleteYourOrder = styled.h2`
+  margin-left: 2rem;
 `;

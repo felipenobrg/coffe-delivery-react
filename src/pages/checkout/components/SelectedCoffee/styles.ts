@@ -8,11 +8,21 @@ export const SelectedCoffeContainer = styled.div`
   border-radius: 9px;
   background: ${(props) => props.theme["base-input"]};
   font-family: "Roboto", sans-serif;
-  width: 35rem;
+  min-width: 30%;
   border-radius: 8px 36px 8px 36px;
 
   h2 {
     margin-top: -3rem;
+  }
+
+  @media (max-width: 600px) {
+  width: 100%;
+  margin-top: 15rem;
+  flex-wrap: wrap;
+
+   h2 {
+    margin-left: 2rem;
+   }
   }
 `;
 
@@ -42,5 +52,8 @@ export const TotalItems = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 18rem;
 `;
+
+export const SpacinPrice = styled.p`
+    margin-left: 4rem;
+`

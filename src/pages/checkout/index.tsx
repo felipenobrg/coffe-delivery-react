@@ -5,6 +5,7 @@ import { SelectedCoffe } from "./components/SelectedCoffee";
 import {
   AdressContainer,
   CheckoutContainer,
+  CompleteYourOrder,
   MainRow,
 } from "./styles";
 
@@ -13,7 +14,7 @@ export const Checkout = () => {
     <>
       <Header />
       <CheckoutContainer>
-        <h2>Complete seu pedido</h2>
+        <CompleteYourOrder>Complete seu pedido</CompleteYourOrder>
         <MainRow>
           <AdressContainer>
             <EnterAdress />
