@@ -1,5 +1,5 @@
 import CoffesData from "../../data/coffesdata/index";
-import { CoffesAvailable } from "../Coffes/index.tsx";
+import { CoffesAvailable } from "../Coffes";
 
 export const CoffesCards = () => {
   return (
