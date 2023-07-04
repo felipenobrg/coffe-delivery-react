@@ -22,16 +22,16 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
   const { changeCartItemQuantity, removeCartItem } = useCart();
 
   const handleIncrease = () => {
-    changeCartItemQuantity(coffee.id, "increase")
-  }
+    changeCartItemQuantity(coffee.id, "increase");
+  };
 
   const handleDecrease = () => {
-    changeCartItemQuantity(coffee.id, "decrease")
-  }
+    changeCartItemQuantity(coffee.id, "decrease");
+  };
 
   const handleRemove = () => {
-    removeCartItem(coffee.id)
-  }
+    removeCartItem(coffee.id);
+  };
 
   const coffeeTotal = coffee.price * coffee.quantity;
   const formattedPrice = formatMoney(coffeeTotal);
@@ -44,7 +44,7 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
           <Price>{formattedPrice}</Price>
         </TypeImage>
         <Buttons>
-          <IncreaseDecrease onClick={handleDecrease} >
+          <IncreaseDecrease onClick={handleDecrease}>
             <Minus size={18} color="#8047F8" />
           </IncreaseDecrease>
           <AmountCoffee>{coffee.quantity}</AmountCoffee>

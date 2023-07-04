@@ -3,7 +3,7 @@ import { ChosenCoffe } from "./ChosenCoffe";
 import { useCart } from "../../../../hooks/useCoffeContext";
 
 export const SelectedCoffe = () => {
-  const { cartItems } = useCart()
+  const { cartItems, cartItemsTotal, cartItemTotalPlusDelivery } = useCart()
   return (
     <SelectedCoffeContainer>
       <h2>Café selecionados</h2>
@@ -15,7 +15,7 @@ export const SelectedCoffe = () => {
         <AmountItens>
         <TotalItems>
           <p>Total de itens</p>
-          <p>R$29,70</p>
+          <p>{cartItemsTotal}</p>
         </TotalItems>
         <TotalItems>
           <p>Entrega</p>
@@ -23,7 +23,7 @@ export const SelectedCoffe = () => {
         </TotalItems>
         <TotalItems>
           <h4>Total</h4>
-          <h4>R$33,20</h4>
+          <h4>{cartItemTotalPlusDelivery}</h4>
         </TotalItems>
       </AmountItens>
       <ConfirmOrder>CONFIRMAR PEDIDO</ConfirmOrder>
