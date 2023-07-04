@@ -1,8 +1,15 @@
 import { ReactNode, createContext, useState } from "react";
-import { Coffee } from "../components/Coffes/index.tsx";
+import { Coffees } from "../components/Coffes/index.tsx";
 import { produce } from "immer";
 
-export interface CartItem extends Coffee {
+export interface CartItem extends Coffees {
+  id: number;
+  title: string
+  tags: string[];
+  description: string;
+  srcImg: string;
+  price: number;
+  amount: number;
   quantity: number;
 }
 interface CoffeContextType {

@@ -4,7 +4,7 @@ import { useCart } from "../../hooks/useCoffeContext";
 import { useState } from "react";
 import { formatMoney } from "../../utils/formatMoney";
 
-export interface Coffee {
+export interface Coffees {
   id: number;
   title: string
   tags: string[];
@@ -15,7 +15,7 @@ export interface Coffee {
 }
 
 interface CoffeeProps {
-  coffee: Coffee;
+  coffee: Coffees;
 }
 
 export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
