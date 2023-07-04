@@ -15,7 +15,7 @@ import chocolate_quente from '../../assets/coffes-images/chocolate_quente.png';
 
 const CoffesData = [
   {
-    id: '1',
+    id: 1,
     title: 'Expresso Tradicional',
     tags: ['Tradicional'],
     description: 'O tradicional café feito com água quente e grãos moídos',
@@ -24,7 +24,7 @@ const CoffesData = [
     amount: 0,     
   },
   {
-    id: '2',
+    id: 2,
     title: 'Expresso Americano',
     tags: ['Tradicional'],
     description: 'Expresso diluído, menos intenso que o tradicional',
@@ -33,7 +33,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '3',
+    id: 3,
     title: 'Expresso Cremoso',
     tags: ['Tradicional'],
     description: 'Café expresso tradicional com espuma cremosa',
@@ -42,7 +42,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '4',
+    id: 4,
     title: 'Expresso Gelado',
     tags: ['Tradicional', 'Gelado'],
     description: 'Bebida preparada com café expresso e cubos de gelo',
@@ -51,7 +51,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '5',
+    id: 5,
     title: 'Café com Leite',
     tags: ['Tradicional', 'Com Leite'],
     description: 'Meio a meio de expresso tradicional com leite vaporizado',
@@ -60,7 +60,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '6',
+    id: 6,
     title: 'Latte',
     tags: ['Tradicional', 'Com Leite'],
     description:
@@ -70,7 +70,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '7',
+    id: 7,
     title: 'Capuccino',
     tags: ['Tradicional', 'Com Leite'],
     description:
@@ -80,7 +80,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '8',
+    id: 8,
     title: 'Macchiato',
     tags: ['Tradicional', 'Com Leite'],
     description:
@@ -90,7 +90,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '9',
+    id: 9,
     title: 'Mocaccino',
     tags: ['Tradicional', 'Com Leite'],
     description: 'Café expresso com calda de chocolate, pouco leite e espuma',
@@ -99,7 +99,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '10',
+    id: 10,
     title: 'Chocolate Quente',
     tags: ['Especial', 'Com Leite'],
     description: 'Bebida feita com chocolate dissolvido no leite quente e café',
@@ -108,7 +108,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '11',
+    id: 11,
     title: 'Cubano',
     tags: ['Especial', 'Alcoólico', 'Gelado'],
     description:
@@ -118,7 +118,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '12',
+    id: 12,
     title: 'Havaiano',
     tags: ['Especial'],
     description: 'Bebida adocicada preparada com café e leite de coco',
@@ -127,7 +127,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '13',
+    id: 13,
     title: 'Árabe',
     tags: ['Especial'],
     description: 'Bebida preparada com grãos de café árabe e especiarias',
@@ -136,7 +136,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '14',
+    id: 14,
     title: 'Irlandês',
     tags: ['Especial', 'Alcoólico'],
     description: 'Bebida a base de café, uísque irlandês, açúcar e chantilly',
@@ -145,7 +145,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '15',
+    id: 15,
     title: 'Latte Vegano',
     tags: ['Especial', 'Vegano'],
     description:
@@ -155,7 +155,7 @@ const CoffesData = [
     amount: 0,
   },
   {
-    id: '16',
+    id: 16,
     title: 'Americano Gelado',
     tags: ['Tradicional', 'Gelado'],
     description: 'Bebida preparada com café expresso americano e cubos de gelo',
