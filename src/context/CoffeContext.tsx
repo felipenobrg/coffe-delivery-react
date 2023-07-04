@@ -61,6 +61,7 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     setCartItems(newCart);
   };
 
+
   return (
     <CoffeContext.Provider
       value={{

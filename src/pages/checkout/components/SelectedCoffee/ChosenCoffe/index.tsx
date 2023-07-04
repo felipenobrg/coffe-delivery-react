@@ -29,6 +29,10 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
     changeCartItemQuantity(coffee.id, "decrease")
   }
 
+  const removeCart = () => {
+
+  }
+
   const coffeeTotal = coffee.price * coffee.quantity;
   const formattedPrice = formatMoney(coffeeTotal);
   return (
