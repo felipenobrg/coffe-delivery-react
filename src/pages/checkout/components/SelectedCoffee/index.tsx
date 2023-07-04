@@ -12,7 +12,7 @@ export const SelectedCoffe = () => {
         return <ChosenCoffe key={item.id} coffee={item} />
       })}
 
-      <AmountItens>
+        <AmountItens>
         <TotalItems>
           <p>Total de itens</p>
           <p>R$29,70</p>

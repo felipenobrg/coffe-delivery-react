@@ -46,13 +46,13 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     cartItemsId: number,
     type: "increase" | "decrease"
   ) => {
-    const newCart = produce(cartItemsId, (draft) => {
+    const newCart = produce(cartItems, (draft) => {
       const coffeeExistsInCart = cartItems.findIndex(
         (cartItem) => cartItem.id === cartItemsId
       );
 
       if (coffeeExistsInCart >= 0) {
-        const item = draft(coffeeExistsInCart);
+        const item = draft[coffeeExistsInCart];
         draft[coffeeExistsInCart].quantity =
           type == "increase" ? item.quantity + 1 : item.quantity - 1;
       }

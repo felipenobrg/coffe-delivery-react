@@ -4,7 +4,7 @@ import { useCart } from "../../hooks/useCoffeContext";
 import { useState } from "react";
 
 export interface Coffee {
-  id: string;
+  id: number;
   title: string
   tags: string[];
   description: string;
