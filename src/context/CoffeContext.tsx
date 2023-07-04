@@ -1,5 +1,5 @@
 import { ReactNode, createContext, useState } from "react";
-import { Coffee } from "../components/Coffes";
+import { Coffee } from "../components/Coffes/index.tsx";
 import { produce } from "immer";
 
 export interface CartItem extends Coffee {
@@ -38,10 +38,9 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     const coffeAlreadyExistInCart = cartItems.findIndex(
       (cartItems) => cartItems.id === coffee.id
     );
-    console.log(cartItems);
 
     const newCart = produce(cartItems, (draft) => {
-      if (coffeAlreadyExistInCart < 0) {
+      if (coffeAlreadyExistInCart <= 0) {
         draft.push(coffee);
       } else {
         draft[coffeAlreadyExistInCart].quantity += coffee.quantity;
