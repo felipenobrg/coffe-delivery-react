@@ -13,12 +13,12 @@ export const Header = () => {
         <MapPin size={18} color="#8047F8" weight="fill" /> João Pessoa, PB
       </p>
       <span>
-        <button>
-          <NavLink to={"/checkout"}>
+        <NavLink to={"/checkout"}>
+          <button>
             <ShoppingCart size={18} color="#C47F17" weight="fill" />
             <CartAmount>{cartQuantity}</CartAmount>
-          </NavLink>
-        </button>
+          </button>
+        </NavLink>
       </span>
     </HeaderContainer>
   );
