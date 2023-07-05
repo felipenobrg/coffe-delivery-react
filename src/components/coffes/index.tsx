@@ -18,7 +18,7 @@ interface CoffeeProps {
   coffee: Coffees;
 }
 
-export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
+const CoffesAvailable = ({ coffee }: CoffeeProps) => {
   const [quantity, setQuantity] = useState(1)
   const formattedPrice = formatMoney(coffee.price)
 
@@ -61,3 +61,5 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
         </CoffesAvailableContainer>
   );
 }
+
+export default CoffesAvailable
