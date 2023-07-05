@@ -7,6 +7,7 @@ import {
 import "../../styles/global.ts";
 import { Header } from "../../components/Header/index.tsx";
 import { CoffesCards } from "../../components/CoffesCards/index.tsx";
+import CoffeSection from "../../assets/coffe-section.png"
 
 function App() {  
   return (
@@ -42,7 +43,7 @@ function App() {
           </div>
         </IconsContainer>
         <img
-          src="https://s3-alpha-sig.figma.com/img/731e/f48d/acb13d1b7c718c6f523d5dc02407a226?Expires=1685923200&Signature=m2BPFQQgeohcIuk9CWCHIympI9pTjHRwQGa3vqrPhoRliggF1uhRf3ty1d6Clt8JanRp1W7r6Pla9jZL7TeBz~SRCKEK4uo9jiJnJEQzaBKSJqgqWgvmZgd8Bi00qxVxj-bG8AsWwjDRhOh9Zd2Pt1S-ZuV30S4YhuOwAYRGyS8TAT-6bsdyvbncZmC4NaLcU5md8Wc8q-ckyJ-G2saDx7C-nIIJ5RBFAb8munuiGDwIJH~7I2jt2~8v~7qkCwloDH8ciE1dvwR3f3qoE6btLgKK03JVfBM5W6360EEqAz9mPLIJkQ2sBVl6~Uz0McMPQKz7rHTGIxiIxuRNGeAV9w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          src={CoffeSection}
           alt=""
         />
         </div>

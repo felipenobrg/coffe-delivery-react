@@ -1,6 +1,7 @@
 import { Header } from "../../components/Header";
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
 import { AboutOrder, ConfirmedOrderContainer } from "./styles";
+import MotoboyPhoto from "../../assets/motoboy.png"
 
 export const ConfirmedOrder = () => {
   return (
@@ -57,7 +58,7 @@ export const ConfirmedOrder = () => {
           </div>
 
           <div>
-            <img src="./src/assets/motoboy.png" alt="" />
+            <img src={MotoboyPhoto}alt="" />
           </div>
         </AboutOrder>
       </ConfirmedOrderContainer>
