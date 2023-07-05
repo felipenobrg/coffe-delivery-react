@@ -8,7 +8,7 @@ export const Header = () => {
 
   return (
     <HeaderContainer>
-      <img src="./src/assets/coffe-logo.svg" alt="" />
+      <img src="../src/assets/coffe-logo.svg" alt="" />
       <p>
         <MapPin size={18} color="#8047F8" weight="fill" /> João Pessoa, PB
       </p>
