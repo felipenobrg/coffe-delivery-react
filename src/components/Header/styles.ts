@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
   position: 0;
 
   img {
-    margin-left: 4rem;
+    margin-left: 4.9rem;
   }
 
   p {

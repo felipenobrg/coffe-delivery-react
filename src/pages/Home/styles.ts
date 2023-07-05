@@ -10,11 +10,11 @@ export const SectionContainer = styled.section`
   background-size: cover;
 
   max-width: 100%;
-  margin-top: 1rem;
+
 
   img {
     width: 30%;
-    margin-left: 55rem;
+    margin-left: 53rem;
     margin-top: -18rem;
   }
 
