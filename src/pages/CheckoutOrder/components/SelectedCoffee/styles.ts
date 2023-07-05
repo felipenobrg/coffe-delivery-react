@@ -46,6 +46,8 @@ export const ConfirmOrder = styled.button`
 
 export const AmountItens = styled.div`
   margin-left: 3rem;
+  border-top: 1px solid ${(props) => props.theme["base-button"]};;
+  margin-top: 1rem;
 `;
 
 export const TotalItems = styled.div`

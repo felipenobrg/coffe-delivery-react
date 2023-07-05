@@ -36,15 +36,20 @@ export const SectionContainer = styled.section`
 
   @media (max-width: 600px) {
     margin: 0 auto;
+    background: none;
+    margin-top: -5rem;
 
     img {
       width: 18rem;
       margin: 0 auto;
+      margin-left: -2rem;
       margin-top: 2rem;
     }
 
     .about-coffee-section {
+      margin: 0 auto;
       line-height: 1.1;
+      width: 15rem;
     }
   }
 `
@@ -86,12 +91,16 @@ export const IconsContainer = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
+    line-height: 1.1rem;
+    gap: 0.3rem;
+    margin: 0 auto;
 
     .shoppingCart-icon,
     .package-icon,
     .timer-icon,
     .coffe-icon {
       display: flex; 
+      margin-top: 0.1rem;
     }
 
     .package-icon {
@@ -108,6 +117,10 @@ export const OurCoffes = styled.h1`
    margin-left: 4.3rem;
    margin-top: 5rem;
    font-family: 'Baloo 2', sans-serif;
+
+   @media (max-width: 600px) {
+    margin-top: -1rem;
+   }
 `
 
 export const CoffeStyle = styled.div`

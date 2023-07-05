@@ -17,7 +17,7 @@ function App() {
         <div className="about-coffee-section">
           <h1>
             Encontre o café perfeito <br /> para qualquer hora do dia
-          </h1>
+          </h1> 
           <p>
             Com o Coffee Delivery você recebe seu café onde estiver, a <br />{" "}
             qualquer hora
