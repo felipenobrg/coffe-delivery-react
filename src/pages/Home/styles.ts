@@ -35,21 +35,18 @@ export const SectionContainer = styled.section`
   }
 
   @media (max-width: 600px) {
-    margin: 0 auto;
     background: none;
     margin-top: -5rem;
 
     img {
       width: 18rem;
       margin: 0 auto;
-      margin-left: -2rem;
       margin-top: 2rem;
     }
 
     .about-coffee-section {
-      margin: 0 auto;
       line-height: 1.1;
-      width: 15rem;
+      width: 16rem;
     }
   }
 `
@@ -58,9 +55,9 @@ export const IconsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-top: 1rem;
   margin-left: 4rem;
   font-family: 'Roboto', sans-serif;
+  margin-top: 1rem;
   .shoppingCart-icon,
   .package-icon,
   .timer-icon,
@@ -92,14 +89,14 @@ export const IconsContainer = styled.div`
   @media (max-width: 600px) {
     display: flex;
     line-height: 1.1rem;
+    flex-wrap: wrap;
     gap: 0.3rem;
-    margin: 0 auto;
-
+   
     .shoppingCart-icon,
     .package-icon,
     .timer-icon,
     .coffe-icon {
-      display: flex; 
+      display: flex;
       margin-top: 0.1rem;
     }
 
