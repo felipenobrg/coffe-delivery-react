@@ -3,27 +3,28 @@ import styled from "styled-components";
 export const TypeCoffe = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-bottom: 1px solid ${(props) => props.theme["base-button"]};
   margin-left: 1rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 `;
 
 export const TypeImage = styled.div`
   display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 1rem;
 `;
+
 
 export const CoffeImg = styled.img`
   margin-left: 0.5rem;
   margin-top: 1rem;
-  width: 20%;
+  width: 4rem;
 `;
 
 export const Price = styled.p`
-  font-weight: bold;
-  margin-left: 5rem;
   color: ${(props) => props.theme["base-text"]};
+  font-weight: bold;
   font-size: 1.1rem;
 `;
 
@@ -36,7 +37,8 @@ export const Buttons = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -4rem;
+  margin-left: 3rem;
+
 
   @media (max-width: 600px) {
     margin-top: 0.1rem;

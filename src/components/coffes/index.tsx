@@ -51,11 +51,11 @@ export const CoffesAvailable = ({ coffee }: CoffeeProps) => {
           <Description>{coffee.description}</Description>
           <CoffeAmountContainer> 
           <Price><span>R$</span>{formattedPrice}</Price>
-            <ButtonCoffe disabled={quantity <= 1} onClick={handleDecrease}><Minus color="#8047F8" /></ButtonCoffe>
+            <ButtonCoffe disabled={quantity <= 1} onClick={handleDecrease}><Minus weight="bold" color="#8047F8" /></ButtonCoffe>
             <CoffeAmountSpan>{quantity}</CoffeAmountSpan>
-            <ButtonCoffe onClick={handleIncrease}><Plus color="#8047F8" /></ButtonCoffe>
+            <ButtonCoffe onClick={handleIncrease}><Plus weight="bold" color="#8047F8" /></ButtonCoffe>
             <ShoppingCartContainer onClick={handleAddToCart}>
-              <ShoppingCart size={18} weight="fill" color="#fff" />
+              <ShoppingCart size={22} weight="fill" color="#fff" />
             </ShoppingCartContainer>
           </CoffeAmountContainer>
         </CoffesAvailableContainer>

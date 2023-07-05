@@ -5,11 +5,11 @@ export const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  background: ${() => `url(${introBackgroundImg})`} center;
+  padding: 5rem 3rem 3rem 2rem;
+  background: ${() => `url(${introBackgroundImg})`} no-repeat center center;
   background-size: cover;
 
-  width: 100%;
+  max-width: 100%;
   margin-top: 1rem;
 
   img {

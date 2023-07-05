@@ -4,13 +4,14 @@ export const CoffesAvailableContainer = styled.div`
   display: inline-flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 1rem;
-  height: 100%;
-  width: 20%;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 20rem;
+  height: 20rem;
+  margin-left: 6rem;
   border-radius: 6px 36px 6px 36px;
-  margin-left: 3.9rem;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   background: ${(props) => props.theme["base-card"]};
 
   @media (max-width: 600px) {
@@ -25,13 +26,12 @@ export const CoffesAvailableContainer = styled.div`
 `;
 
 export const ImgCoffe = styled.img`
-  min-width: 50%;
-  margin-top: -2rem;
+  width: 10rem;
+  margin-top: -5rem;
 `;
 
 export const Title = styled.div`
   font-family: "Baloo 2";
-  margin-top: -0.2rem;
   font-size: 1.2rem;
 `;
 
@@ -41,8 +41,6 @@ export const Tags = styled.div`
   align-items: center;
   justify-content: center;
   gap: 4px;
-  margin-top: 1rem;
-  margin-bottom: 1.25rem;
   flex-wrap: wrap;
   font-family: "Roboto", sans-serif;
 
@@ -56,9 +54,9 @@ export const Tags = styled.div`
 `;
 
 export const Description = styled.div`
+  padding: 0.6rem;
   color: ${(props) => props.theme["base-label"]};
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-bottom: 1rem;
   text-align: center;
 `;
 
@@ -109,7 +107,8 @@ export const ShoppingCartContainer = styled.button`
   cursor: pointer;
   margin-left: 0.3rem;
   padding: 0.5rem;
-  border-radius: 3px;
+  border: none;
+  border-radius: 9px;
   background: ${(props) => props.theme["purple-dark"]};
 
   &:hover {

@@ -38,7 +38,7 @@ export const ChosenCoffe = ({ coffee }: CoffeeCartCardProps) => {
   return (
     <>
       <TypeCoffe>
-        <TypeImage className="type-image">
+        <TypeImage>
           <CoffeImg src={coffee.srcImg} alt="" />
           <NameCoffee>{coffee.title}</NameCoffee>
           <Price>{formattedPrice}</Price>
