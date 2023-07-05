@@ -1,5 +1,5 @@
 import CoffesData from "../../data/coffesdata/index";
-import CoffesAvailable  from "../Coffes";
+import CoffesAvailable  from "../CoffesAvailable";
 
 export const CoffesCards = () => {
   return (
