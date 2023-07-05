@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
 import App from "../pages/Home"
 import { ConfirmedOrder } from "../pages/ConfirmedOrder"
-import { Checkout } from "../pages/Checkout"
+import { Checkout } from "../pages/CheckoutOrder"
 
 export const Router = () => {
     return (
