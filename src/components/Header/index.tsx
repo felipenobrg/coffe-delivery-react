@@ -9,7 +9,9 @@ export const Header = () => {
 
   return (
     <HeaderContainer>
+      <NavLink to={"/"}>
       <img src={CoffeeLogo} alt="" />
+      </NavLink>
       <p>
         <MapPin size={18} color="#8047F8" weight="fill" /> João Pessoa, PB
       </p>
