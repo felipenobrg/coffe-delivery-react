@@ -21,7 +21,7 @@ export const PaymentMethods = () => {
             {" "}
             <Bank size={18} color="#8047F8" /> CARTÃO DE DÉBITO
           </button>
-          <button>
+          <button >
             {" "}
             <Money size={18} color="#8047F8" /> DINHEIRO
           </button>
