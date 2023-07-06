@@ -5,7 +5,7 @@ export const PaymentMethodsContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  background: ${(props) => props.theme["base-input"]};
+  background: ${(props) => props.theme["base-card"]};
   min-width: 108.5%;
   height: 12rem;
   border-radius: 9px;

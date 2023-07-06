@@ -6,7 +6,7 @@ export const SelectedCoffeContainer = styled.div`
   align-items: flex-start;
   margin-left: 2rem;
   border-radius: 9px;
-  background: ${(props) => props.theme["base-input"]};
+  background: ${(props) => props.theme["base-card"]};
   font-family: "Roboto", sans-serif;
   min-width: 30%;
   border-radius: 8px 36px 8px 36px;

@@ -30,7 +30,7 @@ export const SelectedCoffe = () => {
           <SpacinPrice>R${formattedItemTotalPlusDelivery}</SpacinPrice>
         </TotalItems>
       </AmountItens>
-      <ConfirmOrder disabled={cartQuantity <= 0}>CONFIRMAR PEDIDO</ConfirmOrder>
+      <ConfirmOrder type="submit" disabled={cartQuantity <= 0}>CONFIRMAR PEDIDO</ConfirmOrder>
     </SelectedCoffeContainer>
   );
 };

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
-export const CheckoutContainer = styled.div`
+export const CheckoutContainer = styled.form`
   display: flex;
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
 `;
+
 export const MainRow = styled.div`
   display: flex;
 
@@ -21,7 +22,7 @@ export const AdressContainer = styled.div`
   padding: 2rem;
   margin-left: 3rem;
   font-family: "Roboto", sans-serif;
-  background: ${(props) => props.theme["base-input"]};
+  background: ${(props) => props.theme["base-card"]};
   border-radius: 9px;
 
   p {
@@ -31,17 +32,6 @@ export const AdressContainer = styled.div`
     gap: 0.3rem;
     color: ${(props) => props.theme["base-text"]};
     margin-bottom: 2rem;
-  }
-
-  input {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    padding: 1rem;
-    border: 0;
-    width: 90%;
-    border-radius: 9px;
   }
 
   .number {
