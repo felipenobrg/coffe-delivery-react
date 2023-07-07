@@ -4,18 +4,23 @@ export const PaymentMethodsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Roboto", sans-serif;
   background: ${(props) => props.theme["base-card"]};
   min-width: 108.5%;
   height: 12rem;
   border-radius: 9px;
   margin: 5rem 0 0 -2rem;
- 
+
+  .payments-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+  }
 
   .p-payment {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.3rem;
   }
 
   .payment-div {
@@ -27,40 +32,50 @@ export const PaymentMethodsContainer = styled.div`
     color: ${(props) => props.theme["base-text"]};
   }
 
-  .button-container {
+  .input-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-left: 1rem;
-  }
-
-  .button-container button {
-    display: inline-flex;
-    align-items: center;
-    gap: 1rem;
     background: ${(props) => props.theme["base-button"]};
-    padding: 1rem;
+    padding: 0.7rem;
     border-radius: 9px;
-    border: none;
-    margin: -1rem 0.3rem 0 0;
+    transition: 0.4s ease;
     cursor: pointer;
+    font-size: 0.8rem;
+
+    &:hover {
+      background: ${(props) => props.theme["base-hover"]};
+    }
   }
 
-  .button-container button:hover {
+  input {
+    visibility: hidden;
+    appearance: none;
+  }
+
+  input:checked + label div {
     background: ${(props) => props.theme["purple-light"]};
-    transition: 0.3s ease;
+    border-color: ${(props) => props.theme["purple"]};
+  }
+
+  label {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2rem;
   }
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
-    .button-container button {
+    .payments-container button {
       height: 3rem;
       margin-bottom: 1rem;
       font-size: 0.5rem;
     }
 
-    .button-container button svg {
+    .payments-container button svg {
       width: 2rem;
     }
   }
+
+  user-select: none;
 `;

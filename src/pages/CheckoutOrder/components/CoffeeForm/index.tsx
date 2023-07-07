@@ -25,7 +25,12 @@ export const CoffeeForm = () => {
           {...register("cep")}
           error={errors.cep?.message}
         />
-        <Input type="text" placeholder="Rua" {...register("rua")} error={errors.rua?.message} />
+        <Input
+          type="text"
+          placeholder="Rua"
+          {...register("rua")}
+          error={errors.rua?.message}
+        />
         <div className="row">
           <Input
             className="number"
@@ -42,8 +47,19 @@ export const CoffeeForm = () => {
           />
         </div>
         <div className="row2">
-          <Input type="text" placeholder="Bairro" {...register("bairro")} error={errors.bairro?.message}/>
-          <Input type="text" placeholder="Cidade" {...register("cidade")} error={errors.cidade?.message} />
+          <Input
+            className="bairro"
+            type="text"
+            placeholder="Bairro"
+            {...register("bairro")}
+            error={errors.bairro?.message}
+          />
+          <Input
+            type="text"
+            placeholder="Cidade"
+            {...register("cidade")}
+            error={errors.cidade?.message}
+          />
           <Input
             className="uf"
             type="text"

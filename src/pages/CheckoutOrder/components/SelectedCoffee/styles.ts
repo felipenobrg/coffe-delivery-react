@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SelectedCoffeContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-left: 2rem;
   border-radius: 9px;
   background: ${(props) => props.theme["base-card"]};
@@ -16,15 +16,37 @@ export const SelectedCoffeContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-  width: 100%;
-  margin-top: 15rem;
-  flex-wrap: wrap;
+    width: 100%;
+    margin-top: 15rem;
+    flex-wrap: wrap;
 
-   h2 {
-    margin-left: 2rem;
-   }
+    h2 {
+      margin-left: 2rem;
+    }
   }
 `;
+
+
+export const AmountItens = styled.div`
+  margin-top: 1rem;
+`;
+
+export const TotalItems = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+
+  h4 {
+    font-size: 1.2rem;
+  }
+`;
+
+export const BoldPrice = styled.p`
+  font-size: 1.2rem;
+  font-weight: bold;
+`;
+
 
 export const ConfirmOrder = styled.button`
   cursor: pointer;
@@ -42,20 +64,9 @@ export const ConfirmOrder = styled.button`
     transition: 0.3s ease;
     background: ${(props) => props.theme["yellow-dark"]};
   }
-`;
 
-export const AmountItens = styled.div`
-  margin-left: 3rem;
-  border-top: 1px solid ${(props) => props.theme["base-button"]};;
-  margin-top: 1rem;
+  &&:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 `;
-
-export const TotalItems = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-
-export const SpacinPrice = styled.p`
-    margin-left: 4rem;
-`

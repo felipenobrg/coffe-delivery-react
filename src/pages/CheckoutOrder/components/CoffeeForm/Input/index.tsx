@@ -1,16 +1,16 @@
 import { InputHTMLAttributes, forwardRef } from "react";
-import { InputContainer, InputWrapper } from "../styles";
+import { ErrorMensage, InputContainer, InputWrapper } from "../styles";
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
     error?: string
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-    ({ error, ...props }, ref) => {
+    ({ error, className, ...props }, ref) => {
     return ( 
-        <InputWrapper>
+        <InputWrapper className={className}>
         <InputContainer {...props} ref={ref} />
-       {error && <p>{error}</p>}
+       {error && <ErrorMensage>{error}</ErrorMensage>}
        </InputWrapper>
     )
     } 

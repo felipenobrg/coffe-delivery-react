@@ -4,6 +4,38 @@ export const CheckoutContainer = styled.form`
   display: flex;
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
+
+  .form input {
+    padding: 1rem;
+  }
+
+  .number {
+    width: 40%;
+    margin-right: 1rem;
+  }
+
+  .bairro {
+    margin-right: 1rem;
+  }
+
+  .cep {
+    width: 40%;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .uf {
+    width: 10%;
+    margin-left: 1rem;
+  }  
 `;
 
 export const MainRow = styled.div`
@@ -24,37 +56,15 @@ export const AdressContainer = styled.div`
   font-family: "Roboto", sans-serif;
   background: ${(props) => props.theme["base-card"]};
   border-radius: 9px;
-
+  
   p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 0.3rem;
-    color: ${(props) => props.theme["base-text"]};
-    margin-bottom: 2rem;
   }
 
-  .number {
-    width: 30%;
-  }
-
-  .cep {
-    width: 40%;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .row2 {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .uf {
-    width: 10%;
-  }
+ 
 
   @media (max-width: 600px) {
     display: flex;

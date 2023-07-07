@@ -5,15 +5,23 @@ export const InputContainer = styled.input`
   flex-direction: column;
   margin-top: 1rem;
   margin-left: 1rem;
-  padding: 1rem;
   border: 0;
   width: 90%;
   border-radius: 9px;
+  background: ${(props) => props.theme["base-input"]};
+
+ 
+  &:focus {
+    border-color: ${(props) => props.theme["base-red"]};
+  }
+
 `;
 
 export const InputWrapper = styled.div`
-  p {
-    margin: 0.5rem 0 0 1.5rem;
-    color: ${(props) => props.theme["base-red"]};
-  }
+  display: flex;
+  flex-direction: column;
 `;
+
+export const ErrorMensage = styled.p`
+   color: ${(props) => props.theme["base-red"]};  
+`
