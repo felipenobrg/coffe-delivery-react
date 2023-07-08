@@ -9,7 +9,6 @@ export const InputContainer = styled.input`
   width: 90%;
   border-radius: 9px;
   background: ${(props) => props.theme["base-input"]};
-
  
   &:focus {
     border-color: ${(props) => props.theme["base-red"]};

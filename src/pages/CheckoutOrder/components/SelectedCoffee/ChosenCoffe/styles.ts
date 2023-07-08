@@ -3,9 +3,7 @@ import styled from "styled-components";
 export const TypeCoffe = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   border-bottom: 1px solid ${(props) => props.theme["base-button"]};
-  margin-left: 1rem;
   margin-top: 1rem;
 `;
 
@@ -15,11 +13,9 @@ export const TypeImage = styled.div`
   gap: 1rem;
 `;
 
-
 export const CoffeImg = styled.img`
-  margin-left: 0.5rem;
   margin-top: 1rem;
-  width: 4rem;
+  max-width: 4rem;
 `;
 
 export const Price = styled.p`
@@ -38,7 +34,6 @@ export const Buttons = styled.div`
   align-items: center;
   justify-content: center;
   margin-left: 3rem;
-
 
   @media (max-width: 600px) {
     margin-top: 0.1rem;

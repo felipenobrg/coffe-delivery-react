@@ -5,16 +5,14 @@ export const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5rem 3rem 3rem 2rem;
+  padding: 1rem 5rem 3rem 4rem;
   background: ${() => `url(${introBackgroundImg})`} no-repeat center center;
   background-size: cover;
-
   max-width: 100%;
-
 
   img {
     width: 30%;
-    margin-left: 53rem;
+    margin-left: 50rem;
     margin-top: -18rem;
   }
 
@@ -111,8 +109,9 @@ export const IconsContainer = styled.div`
 `
 
 export const OurCoffes = styled.h1`
-   margin-left: 4.3rem;
-   margin-top: 5rem;
+   margin-left: 5rem;
+   margin-bottom: 2rem;
+  
    font-family: 'Baloo 2', sans-serif;
 
    @media (max-width: 600px) {

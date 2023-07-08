@@ -26,7 +26,6 @@ export const SelectedCoffeContainer = styled.div`
   }
 `;
 
-
 export const AmountItens = styled.div`
   margin-top: 1rem;
 `;
@@ -38,12 +37,12 @@ export const TotalItems = styled.div`
   gap: 8rem;
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 `;
 
 export const BoldPrice = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
 `;
 
@@ -51,7 +50,7 @@ export const BoldPrice = styled.p`
 export const ConfirmOrder = styled.button`
   cursor: pointer;
   min-width: 80%;
-  padding: 0.8rem;
+  padding: 1rem;
   color: ${(props) => props.theme["white"]};
   background: ${(props) => props.theme["yellow"]};
   border: none;

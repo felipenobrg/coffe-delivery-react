@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CheckoutContainer = styled.form`
   display: flex;
+  margin-left: 2rem;
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
 
@@ -14,12 +15,21 @@ export const CheckoutContainer = styled.form`
     margin-right: 1rem;
   }
 
-  .bairro {
+  .city {
+    width: 36.5%;
+  }
+
+  .neighborhood {
+    width: 40%;
     margin-right: 1rem;
   }
 
   .cep {
     width: 40%;
+  }
+
+  .complement {
+    width: 53%;
   }
 
   .row {

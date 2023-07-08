@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const ConfirmedOrderContainer = styled.section`
-   margin-top: 3rem;
-   margin-left: 4rem;
+   display: flex;
+   flex-direction: column;
+   margin-left: 6rem;
    font-family: 'Roboto', sans-serif;
 
   .orderIsConfirmed p {
@@ -12,13 +13,12 @@ export const ConfirmedOrderContainer = styled.section`
   .orderIsConfirmed h1 {
     color: ${(props) => props.theme['yellow-dark']};
     font-family: 'Baloo 2', sans-serif;
-  }
+  } 
 `
-
 export const AboutOrder = styled.div`
    display: flex;
-   margin-top: 3rem;
-   justify-content: space-between;
+   margin-top: 1rem;
+   gap: 2rem;
    align-items: center;
 
    .information-order-container {
@@ -26,6 +26,7 @@ export const AboutOrder = styled.div`
     border: 1px solid ${(props) => props.theme['purple']};
     border-radius: 0 3rem;
     padding: 2rem;
+    height: 15rem;
    }
 
    .information-order {
@@ -59,4 +60,23 @@ export const AboutOrder = styled.div`
    .payment-order svg {
       background: ${(props) => props.theme['yellow-dark']};
    }
+
+   @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    .information-order-container {
+      margin: 0 auto;
+      width: 68%;
+      padding: 1rem;
+      margin-right: 20rem;
+    }
+
+    img {
+      width: 80%;
+     
+    }
+  }
+  
 `
