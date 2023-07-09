@@ -23,7 +23,8 @@ export const AboutOrder = styled.div`
 
    .information-order-container {
     width: 30rem;
-    border: 1px solid ${(props) => props.theme['purple']};
+    border: 1.5px solid ${(props) => props.theme['purple']};
+
     border-radius: 0 3rem;
     padding: 2rem;
     height: 15rem;

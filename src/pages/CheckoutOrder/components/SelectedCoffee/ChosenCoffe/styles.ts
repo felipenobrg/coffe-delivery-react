@@ -40,11 +40,12 @@ export const Buttons = styled.div`
   }
 `;
 
-export const IncreaseDecrease = styled.button`
+export const IncreaseDecrease = styled.div`
   cursor: pointer;
   background: ${(props) => props.theme["base-button"]};
   padding: 0.4rem;
   border: none;
+  user-select: none;
 
   &:hover {
     transition: 0.3s ease;
@@ -58,7 +59,7 @@ export const AmountCoffee = styled.p`
   padding: 0.46rem;
 `;
 
-export const Remove = styled.button`
+export const Remove = styled.div`
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -69,6 +70,7 @@ export const Remove = styled.button`
   margin-left: 1rem;
   color: ${(props) => props.theme["base-text"]};
   text-transform: uppercase;
+  user-select: none;
 
   &:hover {
     transition: 0.3s ease;
