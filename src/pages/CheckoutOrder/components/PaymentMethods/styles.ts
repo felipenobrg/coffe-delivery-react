@@ -64,7 +64,7 @@ export const PaymentMethodsContainer = styled.div`
     gap: 0.2rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     flex-wrap: wrap;
     .payments-container button {
       height: 3rem;

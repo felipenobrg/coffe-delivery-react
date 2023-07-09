@@ -37,7 +37,7 @@ export const HeaderContainer = styled.header`
     margin-right: 4rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
      display: flex;
      align-items: center;
      justify-content: center;
@@ -62,7 +62,7 @@ export const CartAmount = styled.span`
   position: absolute;
   top: 22px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     top: 20px
   }
 `;

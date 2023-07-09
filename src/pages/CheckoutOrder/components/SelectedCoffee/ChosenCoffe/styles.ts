@@ -35,7 +35,7 @@ export const Buttons = styled.div`
   justify-content: center;
   margin-left: 3rem;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin-top: 0.1rem;
   }
 `;

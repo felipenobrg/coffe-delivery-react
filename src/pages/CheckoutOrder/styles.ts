@@ -51,7 +51,7 @@ export const CheckoutContainer = styled.form`
 export const MainRow = styled.div`
   display: flex;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -76,7 +76,7 @@ export const AdressContainer = styled.div`
 
  
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     display: flex;
     align-items: center;
     flex-direction: column;

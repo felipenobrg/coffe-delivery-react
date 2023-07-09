@@ -14,7 +14,7 @@ export const CoffesAvailableContainer = styled.div`
   margin-bottom: 2rem;
   background: ${(props) => props.theme["base-card"]};
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
