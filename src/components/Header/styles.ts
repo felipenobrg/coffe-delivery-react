@@ -22,7 +22,7 @@ export const HeaderContainer = styled.header`
     gap: 0.3rem;
     background: ${(props) => props.theme["purple-light"]};
     color: ${(props) => props.theme["purple-dark"]};
-    padding: 0.6rem;
+    padding: 0.7rem;
     border-radius: 8px;
     font-family: "Roboto", sans-serif;
     margin-left: auto;

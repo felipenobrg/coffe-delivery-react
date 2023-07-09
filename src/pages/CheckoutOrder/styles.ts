@@ -6,10 +6,6 @@ export const CheckoutContainer = styled.form`
   flex-direction: column;
   font-family: "Baloo 2", sans-serif;
 
-  .form input {
-    padding: 1rem;
-  }
-
   .number {
     width: 40%;
     margin-right: 1rem;
@@ -29,7 +25,7 @@ export const CheckoutContainer = styled.form`
   }
 
   .complement {
-    width: 53%;
+    width: 56%;
   }
 
   .row {
@@ -43,7 +39,7 @@ export const CheckoutContainer = styled.form`
   }
 
   .uf {
-    width: 10%;
+    width: 17.4%;
     margin-left: 1rem;
   }  
 `;
@@ -73,8 +69,6 @@ export const AdressContainer = styled.div`
     justify-content: flex-start;
     gap: 0.3rem;
   }
-
- 
 
   @media (max-width: 768px) {
     display: flex;

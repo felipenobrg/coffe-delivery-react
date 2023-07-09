@@ -17,7 +17,7 @@ export const SelectedCoffeContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
-    margin-top: 15rem;
+    margin-top: 12rem;
     flex-wrap: wrap;
 
     h2 {

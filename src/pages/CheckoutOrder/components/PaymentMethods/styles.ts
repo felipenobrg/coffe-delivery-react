@@ -66,14 +66,19 @@ export const PaymentMethodsContainer = styled.div`
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
-    .payments-container button {
+    .payments-container {
       height: 3rem;
       margin-bottom: 1rem;
       font-size: 0.5rem;
     }
 
-    .payments-container button svg {
+    .payments-container svg {
       width: 2rem;
+    }
+
+    .input-card {
+      height: 1rem;
+      font-size: 0.7rem;
     }
   }
 
