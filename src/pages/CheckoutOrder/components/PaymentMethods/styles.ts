@@ -37,7 +37,7 @@ export const PaymentMethodsContainer = styled.div`
     align-items: center;
     gap: 0.4rem;
     background: ${(props) => props.theme["base-button"]};
-    padding: 0.7rem;
+    padding: 1rem;
     border-radius: 9px;
     transition: 0.4s ease;
     cursor: pointer;
@@ -93,5 +93,10 @@ export const PaymentMethodsContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-   
+  
+`
+export const ErrorPayment = styled.p`
+  color: ${(props) => props.theme["base-red"]};
+  margin-left: 3rem;
+ 
 `

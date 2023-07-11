@@ -70,6 +70,7 @@ export const Remove = styled.div`
   margin-left: 1rem;
   color: ${(props) => props.theme["base-text"]};
   text-transform: uppercase;
+  font-size: 0.8rem;
   user-select: none;
 
   &:hover {

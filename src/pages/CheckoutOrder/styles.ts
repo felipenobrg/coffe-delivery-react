@@ -12,7 +12,7 @@ export const CheckoutContainer = styled.form`
   }
 
   .street {
-    margin-right: 11rem;
+    min-width: 100%;
   }
 
   .city {
@@ -25,7 +25,7 @@ export const CheckoutContainer = styled.form`
   }
 
   .cep {
-    width: 40%;
+    width: 50%;
   }
 
   .complement {

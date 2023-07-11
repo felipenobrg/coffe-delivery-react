@@ -1,6 +1,7 @@
 import { Bank, CreditCard, CurrencyDollar, Money } from "phosphor-react";
 import { PaymentMethod } from "../index";
-import { PaymentMethodsContainer } from "../styles";
+import { ErrorPayment, PaymentMethodsContainer } from "../styles";
+import { useFormContext } from "react-hook-form";
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const paymentMethodsType = {
@@ -19,6 +20,14 @@ export const paymentMethodsType = {
 };
 
 export const PaymentMethodsOptions = () => {
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
+
+  const paymentMethodError = errors?.paymentMethod
+    ?.message as unknown as string;
+
   return (
     <PaymentMethodsContainer>
       <div className="payment-div">
@@ -30,10 +39,17 @@ export const PaymentMethodsOptions = () => {
         </p>
       </div>
       <div className="payments-container">
-      {Object.entries(paymentMethodsType).map(([key, { label, icon }]) => (
-        <PaymentMethod label={label} id={key} icon={icon} value={key} />
-      ))}
+        {Object.entries(paymentMethodsType).map(([key, { label, icon }]) => (
+          <PaymentMethod
+            label={label}
+            id={key}
+            icon={icon}
+            value={key}
+            {...register("paymentMethod")}
+          />
+        ))}
       </div>
+      {paymentMethodError && <ErrorPayment>{paymentMethodError}</ErrorPayment>}
     </PaymentMethodsContainer>
   );
 };

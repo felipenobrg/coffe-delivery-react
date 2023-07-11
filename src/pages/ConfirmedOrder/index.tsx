@@ -2,8 +2,28 @@ import { Header } from "../../components/Header";
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
 import { AboutOrder, ConfirmedOrderContainer } from "./styles";
 import MotoboyPhoto from "../../assets/motoboy.png"
+import { useLocation, useNavigate } from "react-router-dom";
+import { OrderData } from "../CheckoutOrder";
+import { paymentMethodsType } from "../CheckoutOrder/components/PaymentMethods/Options";
+import { useEffect } from "react";
+
+interface LocationType {
+  state: OrderData
+}
 
 export const ConfirmedOrder = () => {
+  const { state } = useLocation() as unknown as LocationType
+
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    if(!state) {
+      navigate("/")
+    }
+  }, [])
+
+  if(!state) return <></>
+
   return (
     <>
       <Header />
@@ -22,9 +42,9 @@ export const ConfirmedOrder = () => {
               </div>
               <div>
                 <p>
-                  Entrega em <strong>João Pessoa, PB</strong>
+                  Entrega em <strong>{state.cidade}, {state.numero}</strong>
                 </p>
-                <p>Rua João Lima Barbosa, 45</p>
+                <p>{state.cep} - {state.cidade}, {state.uf}</p>
               </div>
             </div>
 
@@ -50,7 +70,7 @@ export const ConfirmedOrder = () => {
               <div>
                 <p>Pagamento na entrega</p>
                 <p>
-                  <strong>Cartão de Crédito</strong>
+                  <strong>{paymentMethodsType[state.paymentMethod].label}</strong>
                 </p>
               </div>
             </div>
