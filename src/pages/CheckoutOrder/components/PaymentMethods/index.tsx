@@ -1,37 +1,21 @@
-import { Bank, CreditCard, CurrencyDollar, Money } from "phosphor-react";
-import { PaymentMethodsContainer } from "./styles";
+import { InputHTMLAttributes, ReactNode } from "react";
+import { ContentContainer } from "./styles";
 
-export const PaymentMethods = () => {
+type PaymentMethodInputProps = InputHTMLAttributes<HTMLInputElement> & {
+  icon: ReactNode
+  label: string
+}
+
+export const PaymentMethod = ({ id, icon, label, ...props }: PaymentMethodInputProps) => {
   return (
-    <PaymentMethodsContainer>
-      <div className="payment-div">
-        <p className="p-payment">
-          <CurrencyDollar size={20} color="#8047F8" weight="fill" /> Pagamento{" "}
-        </p>
-        <p className="p-payment-deliver">
-          O pagamento é feito na entrega. Escolha a forma que deseja pagar
-        </p>
-        <div className="payments-container">
-          <div className="input-card">
-            <input type="radio" />
-            <label htmlFor="">
-              <CreditCard size={18} color="#8047F8" /> CARTÃO DE CRÉDITO
-            </label>
-          </div>
-          <div className="input-card">
-            <input type="radio" checked />
-            <label htmlFor="">
-              <Bank size={18} color="#8047F8" /> CARTÃO DE DÉBITO
-            </label>
-          </div>
-          <div className="input-card">
-            <input type="radio" checked />
-            <label htmlFor="">
-              <Money size={18} color="#8047F8" /> DINHEIRO
-            </label>
-          </div>
-        </div>
-      </div>
-    </PaymentMethodsContainer>
+    <>
+     <input type="radio" {...props} id={id} />
+     <label htmlFor={id}>
+     <ContentContainer  className="input-card">
+      {icon}
+      {label}
+     </ContentContainer>
+     </label>
+    </>
   );
 };

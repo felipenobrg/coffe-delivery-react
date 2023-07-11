@@ -11,6 +11,10 @@ export const CheckoutContainer = styled.form`
     margin-right: 1rem;
   }
 
+  .street {
+    margin-right: 11rem;
+  }
+
   .city {
     width: 36.5%;
   }

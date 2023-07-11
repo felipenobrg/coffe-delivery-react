@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const PaymentMethodsContainer = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   background: ${(props) => props.theme["base-card"]};
   min-width: 108.5%;
   height: 12rem;
@@ -35,12 +35,14 @@ export const PaymentMethodsContainer = styled.div`
   .input-card {
     display: flex;
     align-items: center;
+    gap: 0.4rem;
     background: ${(props) => props.theme["base-button"]};
     padding: 0.7rem;
     border-radius: 9px;
     transition: 0.4s ease;
     cursor: pointer;
     font-size: 0.8rem;
+    text-transform: uppercase;
 
     &:hover {
       background: ${(props) => props.theme["base-hover"]};
@@ -55,6 +57,11 @@ export const PaymentMethodsContainer = styled.div`
   input:checked + label div {
     background: ${(props) => props.theme["purple-light"]};
     border-color: ${(props) => props.theme["purple"]};
+    border: 1px solid ${(props) => props.theme["purple"]};
+  }
+
+  svg {
+    color: ${(props) => props.theme["purple"]};;
   }
 
   label {
@@ -84,3 +91,7 @@ export const PaymentMethodsContainer = styled.div`
 
   user-select: none;
 `;
+
+export const ContentContainer = styled.div`
+   
+`

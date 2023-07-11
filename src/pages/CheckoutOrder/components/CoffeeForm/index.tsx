@@ -1,5 +1,5 @@
 import { useFormContext } from "react-hook-form";
-import { PaymentMethods } from "../PaymentMethods";
+import { PaymentMethodsOptions } from "../PaymentMethods/Options/index";
 import { Input } from "./Input";
 
 interface ErrorsType {
@@ -73,7 +73,7 @@ export const CoffeeForm = () => {
         </div>
       </div>
 
-      <PaymentMethods />
+      <PaymentMethodsOptions />
     </>
   );
 };
