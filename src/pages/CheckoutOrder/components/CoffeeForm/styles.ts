@@ -10,8 +10,6 @@ export const InputContainer = styled.input`
   width: 90%;
   border-radius: 9px;
   background: ${(props) => props.theme["base-input"]};
-
-
 `;
 
 export const InputWrapper = styled.div`

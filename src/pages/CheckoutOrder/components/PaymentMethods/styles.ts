@@ -98,5 +98,4 @@ export const ContentContainer = styled.div`
 export const ErrorPayment = styled.p`
   color: ${(props) => props.theme["base-red"]};
   margin-left: 3rem;
- 
 `

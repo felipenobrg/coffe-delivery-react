@@ -23,6 +23,7 @@ interface CoffeContextType {
     type: "increase" | "decrease"
   ) => void;
   removeCartItem: (CartItemId: number) => void;
+  cleanCart: () => void;
 }
 
 interface CoffeProviderContextProps {
@@ -98,6 +99,10 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
     setCartItems(newCart);
   };
 
+  const cleanCart = () => {
+    setCartItems([])
+  }
+
   useEffect(() => {
   localStorage.setItem(COFFEE_ITEMS_STORAGE_KEY, JSON.stringify(cartItems))
   }, [cartItems])
@@ -112,6 +117,7 @@ export function CoffeContextProvider({ children }: CoffeProviderContextProps) {
         addCoffeToCart,
         changeCartItemQuantity,
         removeCartItem,
+        cleanCart,
       }}
     >
       {children}

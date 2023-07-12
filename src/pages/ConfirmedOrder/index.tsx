@@ -1,28 +1,28 @@
 import { Header } from "../../components/Header";
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
 import { AboutOrder, ConfirmedOrderContainer } from "./styles";
-import MotoboyPhoto from "../../assets/motoboy.png"
+import MotoboyPhoto from "../../assets/motoboy.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { OrderData } from "../CheckoutOrder";
 import { paymentMethodsType } from "../CheckoutOrder/components/PaymentMethods/Options";
 import { useEffect } from "react";
 
 interface LocationType {
-  state: OrderData
+  state: OrderData;
 }
 
 export const ConfirmedOrder = () => {
-  const { state } = useLocation() as unknown as LocationType
+  const { state } = useLocation() as unknown as LocationType;
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
-    if(!state) {
-      navigate("/")
+    if (!state) {
+      navigate("/");
     }
-  }, [])
+  }, [navigate, state]);
 
-  if(!state) return <></>
+  if (!state) return <></>;
 
   return (
     <>
@@ -42,9 +42,14 @@ export const ConfirmedOrder = () => {
               </div>
               <div>
                 <p>
-                  Entrega em <strong>{state.cidade}, {state.numero}</strong>
+                  Entrega em{" "}
+                  <strong>
+                    {state.cidade}, {state.numero}
+                  </strong>
                 </p>
-                <p>{state.cep} - {state.cidade}, {state.uf}</p>
+                <p>
+                  {state.cep} - {state.cidade}, {state.uf}
+                </p>
               </div>
             </div>
 
@@ -64,24 +69,26 @@ export const ConfirmedOrder = () => {
 
             <div className="payment-order-container">
               <div className="payment-order">
-              <div>
-                <CurrencyDollar size={25} weight="fill" color="#ffff" />
+                <div>
+                  <CurrencyDollar size={25} weight="fill" color="#ffff" />
+                </div>
+                <div>
+                  <p>Pagamento na entrega</p>
+                  <p>
+                    <strong>
+                      {paymentMethodsType[state.paymentMethod].label}
+                    </strong>
+                  </p>
+                </div>
               </div>
-              <div>
-                <p>Pagamento na entrega</p>
-                <p>
-                  <strong>{paymentMethodsType[state.paymentMethod].label}</strong>
-                </p>
-              </div>
-            </div>
             </div>
           </div>
 
           <div>
-            <img src={MotoboyPhoto}alt="" />
+            <img src={MotoboyPhoto} alt="" />
           </div>
         </AboutOrder>
       </ConfirmedOrderContainer>
-      </>
+    </>
   );
 };
