@@ -12,6 +12,7 @@ import * as zod from 'zod'
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, FormProvider } from 'react-hook-form'
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../../hooks/useCoffeContext";
 
 enum PaymentMethods {
   credit = "credit",
@@ -40,6 +41,7 @@ type ConfirmOrderFormData = OrderData
 
 export const Checkout = () => {
   const navigate = useNavigate()
+  const { cleanCart } = useCart()
 
   const confirmOrderForm = useForm<ConfirmOrderFormData>({
     resolver: zodResolver(confirmOrderFormValidationSchema)
@@ -51,6 +53,7 @@ export const Checkout = () => {
     navigate("/confirmedOrder", {
       state: data,
     })
+    cleanCart()
   }
 
   return (
