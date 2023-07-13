@@ -26,6 +26,7 @@ This project was developed using the following technologies:
 - useReducer
 - ReactForm
 - ContextApi
+- Phosphor Icons
 
 ---
 
